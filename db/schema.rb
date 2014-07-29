@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140725155956) do
+ActiveRecord::Schema.define(version: 20140728095123) do
+
+  create_table "contents", force: true do |t|
+    t.text     "header1"
+    t.text     "header2"
+    t.text     "section1header1"
+    t.text     "section1paragraph1"
+    t.text     "section2header1"
+    t.text     "section2paragraph1"
+    t.text     "section2paragraph2"
+    t.text     "section3header1"
+    t.text     "section3paragraph1"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

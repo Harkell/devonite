@@ -12,11 +12,11 @@
 }
 
 .blue{
-  color: #1e4b67;;
+  color: #1e4b67;
 }
 
 .blue:hover{
-  color: #1e4b67;;
+  color: #1e4b67;
 }
 
 
@@ -172,6 +172,10 @@
   transition: background-color 300ms ease-out;
 }
 
+.lineheight0{
+  line-height: 0;
+}
+
 .content{
   padding-left: 0.9375em;
   padding-right: 0.9375em;
@@ -179,6 +183,14 @@
 
 .margin2v{
   margin: 2em 0;
+}
+
+.padding07v{
+  padding: 0.7em 0;
+}
+
+.margin0{
+  margin: 0em;
 }
 
 .margin7b{
@@ -319,8 +331,7 @@ meta.foundation-mq-xxlarge {
 meta.foundation-data-attribute-namespace {
   font-family: false; }
 
-html, body {
-  height: 100%; }
+html, body { } 
 
 *,
 *:before,
@@ -2480,7 +2491,7 @@ input[type="tel"],
 input[type="time"],
 input[type="url"],
 textarea {
-  -webkit-appearance: none;
+  webkit-appearance: none;
   -webkit-border-radius: 0px;
   background-color: white;
   font-family: inherit;
@@ -2594,6 +2605,10 @@ input[type="submit"] {
 /* Respect enforced amount of rows for textarea */
 textarea[rows] {
   height: auto; }
+
+textarea{
+  height: 7em;
+}
 
 /* Add height value for select elements to match text input height */
 select {

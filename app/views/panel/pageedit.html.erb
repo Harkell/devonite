@@ -3,10 +3,9 @@
     <%= image_tag("logo.png", class: "margin2v padding12h") %>
   </div>
 </div> 
-
 <div class="narrow">
   <div class="pcontainer">
-    <div class="row">
+    <div class="row lineheight0">
       <div class="large-12 columns">
         <div class="icon-bar four-up">
           <%= link_to(panel_statistics_path, class: "item") do %>
@@ -28,13 +27,47 @@
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <div class="gcontainer">
+          <h4 class="margin0 padding07v">Edit Content</h4>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="narrow">
-  <div class="pcontainer">
+  <div class="pcontainer blue">
+    <div class="row">
+      <div class="large-12 columns content">
+        <h4 class="margin2v">Edit Content</h4>
+        <notice><%= notice %></notice>
+        <h5>Home Page</h5>
+        <%= form_for(@content) do |f| %>
+          <%= f.label "First Header" %>
+          <%= f.text_field :header1 %>
+          <%= f.label "Second Header" %>
+          <%= f.text_field :header2 %>
+          <%= f.label "First Header, first section" %>
+          <%= f.text_field :section1header1 %>
+          <%= f.label "First paragraph, first section" %>
+          <%= f.text_area :section1paragraph1 %>
+          <%= f.label "First Header, second section" %>
+          <%= f.text_field :section2header1 %>
+          <%= f.label "First paragraph, second section" %>
+          <%= f.text_area :section2paragraph1 %>
+          <%= f.label "Second paragraph, second section" %>
+          <%= f.text_area :section2paragraph2 %>
+          <%= f.label "First Header, third section" %>
+          <%= f.text_field :section3header1 %>
+          <%= f.label "First paragraph, third section" %>
+          <%= f.text_area :section3paragraph1 %>
+          <%= f.submit %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
-
   <div class="dgcontainer">
     <div class="narrow">
       <div class="large-12 columns text-center">

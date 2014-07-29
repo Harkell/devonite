@@ -1,5 +1,6 @@
 class FrontController < ApplicationController
   def index
+  	@content = Content.find(1)
   end
 
   def howitworks

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'panel/pageedit'
+  resources :content
 
   get 'panel/requestchange'
 
