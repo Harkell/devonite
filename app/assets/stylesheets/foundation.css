@@ -15,6 +15,10 @@
   color: #1e4b67;
 }
 
+.delete{
+  
+}
+
 .blue:hover{
   color: #1e4b67;
 }
@@ -332,7 +336,6 @@ meta.foundation-data-attribute-namespace {
   font-family: false; }
 
 html, body { } 
-
 *,
 *:before,
 *:after {
