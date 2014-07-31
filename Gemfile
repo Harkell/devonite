@@ -8,7 +8,6 @@ gem 'rails', '4.1.1'
 gem 'pg'
 
 # sqlight for internal enviroments
-
 group :development, :test do
     gem 'sqlite3'
 end
