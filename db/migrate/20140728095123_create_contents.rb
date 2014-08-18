@@ -4,7 +4,7 @@ class CreateContents < ActiveRecord::Migration
       t.text :header1
       t.text :header2
       t.text :section1header1
-      t.text :section1paragraph1
+      t.text :section1paragraph1 
       t.text :section2header1
       t.text :section2paragraph1
       t.text :section2paragraph2
