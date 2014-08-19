@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  header1: MyText
+  header2: MyText
+  section1header1: MyText
+  section1paragraph1: MyText
+  section2header1: MyText
+  section2paragraph1: MyText
+  section2paragraph2: MyText
+  section3header1: MyText
+  section3paragraph1: MyText
+
+two:
+  header1: MyText
+  header2: MyText
+  section1header1: MyText
+  section1paragraph1: MyText
+  section2header1: MyText
+  section2paragraph1: MyText
+  section2paragraph2: MyText
+  section3header1: MyText
+  section3paragraph1: MyText
