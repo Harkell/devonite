@@ -3106,3 +3106,85 @@ th.hide-for-touch {
 
   th.show-for-print {
     display: table-cell !important; } }
+
+    .tabs {
+  margin-bottom: 0 !important;
+  margin-left: 0; }
+  .tabs:before, .tabs:after {
+    content: " ";
+    display: table; }
+  .tabs:after {
+    clear: both; }
+  .tabs dd, .tabs .tab-title {
+    position: relative;
+    margin-bottom: 0 !important;
+    list-style: none;
+    float: left; }
+    .tabs dd > a, .tabs .tab-title > a {
+      display: block;
+      background: #454545;
+      color: #fff;
+      padding: 1rem 2rem;
+      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-size: 0.7rem; }
+      .tabs dd > a:hover, .tabs .tab-title > a:hover {
+        background: #333; }
+    .tabs dd.active a, .tabs .tab-title.active a {
+      background: #333;
+      color: #fff; }
+  .tabs.radius dd:first-child a, .tabs.radius .tab:first-child a {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px; }
+  .tabs.radius dd:last-child a, .tabs.radius .tab:last-child a {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px; }
+  .tabs.vertical dd, .tabs.vertical .tab-title {
+    position: inherit;
+    float: none;
+    display: block;
+    top: auto; }
+
+.tabs-tabcontent {
+  margin-bottom: 1.5rem;
+  width: 100%; }
+  .tabs-tabcontent:before, .tabs-tabcontent:after {
+    tabcontent: " ";
+    display: table; }
+  .tabs-tabcontent:after {
+    clear: both; }
+  .tabs-tabcontent > .tabcontent {
+    display: none;
+    float: left;
+    padding: 0.9375em 0;
+    width: 100%; }
+    .tabs-tabcontent > .tabcontent.active {
+      display: block;
+      float: none; }
+    .tabs-tabcontent > .tabcontent.contained {
+      padding: 0.9375em; }
+  .tabs-tabcontent.vertical {
+    display: block; }
+    .tabs-tabcontent.vertical > .tabcontent {
+       }
+
+@media only screen and (min-width: 40.063em) {
+  .tabs.vertical {
+    width: 20%;
+    max-width: 20%;
+    float: left;
+    margin: 0 0 1.25rem; }
+
+  .tabs-tabcontent.vertical {
+    width: 80%;
+    max-width: 80%;
+    float: left;
+    margin-left: -1px;
+    padding-left: 1rem; } }
+.no-js .tabs-tabcontent > .tabcontent {
+  display: block;
+  float: none; }
+
+li.tab-title {
+  width: 25%;
+  text-align: center;
+}
