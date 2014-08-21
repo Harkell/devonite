@@ -83,7 +83,6 @@
           </div>
           <div class="tabcontent" id="blog">
             <div class="blue content margin2t">
-              <p>Instert third panel content here</p>
               <%= form_for(@blogPost) do |f| %>
                 <%= f.label "Title" %>
                 <%= f.text_field :title %>
@@ -91,13 +90,24 @@
                 <%= f.text_area :content %>
                 <%= f.submit "Create Blog Post" %>
               <% end %>
-              <p>Instert third panel content here</p>
-              <% @blogs.each do |post| %>
-                <%= post.title %>
-                <%= post.created_at.to_s(:short) %>
-                <%= link_to 'Edit', root_path %>
-                <%= link_to 'Destroy', post, method: :delete %><br>
-              <% end %>
+              <div class="scrollbox">
+                <% @blogs.each do |post| %>
+                  <div class="row scrollboxrow">
+                    <div class="large-2 columns text-left">
+                      <%= post.created_at.to_s(:short) %>
+                    </div>
+                    <div class="large-8 columns text-left">
+                      <%= post.title %>
+                    </div>
+                    <div class="large-1 columns text-right red">
+                      <%= link_to 'Edit', root_path %>
+                    </div>
+                    <div class="large-1 columns text-right red">
+                      <%= link_to 'Destroy', post, method: :delete %>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
             </div>
           </div>
           <div class="tabcontent" id="panel2-4">
