@@ -1,4 +1,5 @@
 class BlogpostsController < ApplicationController
+  before_action :post_find, only: [:destroy]
   layout 'blog'
 
   def index
@@ -28,9 +29,16 @@ class BlogpostsController < ApplicationController
 
   end
   def destroy
- 
+    if @blogPost.destroy
+      redirect_to front_blog_path, notice: 'Post was successfully deleted.'
+    else
+      redirect_to front_blog_path, notice: 'Post was not successfully deleted.'
+    end
   end
   private
+  def post_find
+    @blogPost = Blogpost.find(params[:id])
+  end
   def blog_params
     params.require(:blogpost).permit(:title, :content)
   end

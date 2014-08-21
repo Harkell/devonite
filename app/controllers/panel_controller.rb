@@ -4,6 +4,8 @@ class PanelController < ApplicationController
   def pageedit
     @content = Content.find(1)
     @blogPost = Blogpost.new
+    @blogs = Blogpost.all
+  
   end
 
   def requestchange

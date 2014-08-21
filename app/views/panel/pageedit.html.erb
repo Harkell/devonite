@@ -88,6 +88,13 @@
                 <%= f.text_area :content %>
                 <%= f.submit "Create Blog Post" %>
               <% end %>
+              <p>Instert third panel content here</p>
+              <% @blogs.each do |post| %>
+                <%= post.title %>
+                <%= post.created_at.to_s(:short) %>
+                <%= link_to 'Edit', root_path %>
+                <%= link_to 'Destroy', post, method: :delete %><br>
+              <% end %>
             </div>
           </div>
           <div class="tabcontent" id="panel2-4">

@@ -1,10 +1,13 @@
 <% Blogpost.all.each do |post| %>
   <div class="row blogimg padding2v">
   	<div class="large-3 columns text-center">
-  		<h3 class="blogdate margin05t"><b>21<br>AUG</b></h3>
+  		<h3 class="blogdate margin05t"><b><%= post.created_at.to_date.day %><br>
+  			<%= Date::ABBR_MONTHNAMES[post.created_at.to_date.month] %></b></h3>
   	</div>
     <div class="large-9 columns text-left">
       <h1><b><%= post.title %></b></h1>
     </div>
   </div>
 <% end %>
+
+
