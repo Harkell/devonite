@@ -395,8 +395,16 @@
   padding: 0 1.2em;
 }
 
+.padding20r{
+  padding-right: 20em;
+}
+
 .lgcontainer{
   background: #749164;
+}
+
+.wcontainer{
+  background: #fff;
 }
 
 .gcontainer{
