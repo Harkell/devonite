@@ -1,10 +1,10 @@
-<h1>Front#blog</h1>
-<p>Find me in app/views/front/blog.html.erb</p>
 <% Blogpost.all.each do |post| %>
-	<%= post.title %>
-	<%= post.content %>
-	<% if user_signed_in? %>
-	<%= "Edit" %>
-	<%= "Destroy" %>
-	<% end %>
+  <div class="row blogimg padding2v">
+  	<div class="large-3 columns text-center">
+  		<h3 class="blogdate margin05t"><b>21<br>AUG</b></h3>
+  	</div>
+    <div class="large-9 columns text-left">
+      <h1><b><%= post.title %></b></h1>
+    </div>
+  </div>
 <% end %>

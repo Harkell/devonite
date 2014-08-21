@@ -1,8 +1,28 @@
+.blogimg{
+  background: url("http://i.imgur.com/Z1l70mW.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 .nav{
   font-family: 'Sanchez', sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 0.9rem;
+}
+
+.blogtext{
+  font-family: 'Sanchez', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.blogdate{
+  font-family: 'Sanchez', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
 }
 
 .intro{
@@ -232,12 +252,24 @@
   margin: 2em 0;
 }
 
+.margin05t{
+  margin-top: 0.5em;
+}
+
+.margin1v{
+  margin: 1em 0;
+}
+
 .padding07v{
   padding: 0.7em 0;
 }
 
 .margin0{
   margin: 0em;
+}
+
+.margin2b{
+  margin-bottom: 2em;
 }
 
 .margin7b{
@@ -266,6 +298,10 @@
 
 .margin4l{
   margin-right: 4em;
+}
+
+.padding2v{
+  padding: 2em 0;
 }
 
 .margin26t{
@@ -310,6 +346,10 @@
 
 .dgcontainer{
   background: #0f0f0f;
+}
+
+.lineheight05{
+  line-height: 0.5em;
 }
 
 .pcontainer{

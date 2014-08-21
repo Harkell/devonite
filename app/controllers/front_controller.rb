@@ -7,7 +7,9 @@ class FrontController < ApplicationController
   end
 
   def blog
-  	
+      respond_to do |format|
+      format.html {render :layout => 'blog'}
+    end
   end
 
   def connect

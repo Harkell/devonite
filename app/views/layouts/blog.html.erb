@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Devonite</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="bcontainer">
+
+    
+  <div class="narrow">
+    <div class="large-2 columns left">
+      <%= image_tag("footerlogo.png", class: "margin2v padding12h") %>
+    </div>
+    <div class="large-9 columns">
+      <ul class="inline-list nav margin26t right">
+        <li><a href="index.html">HOME</a></li>
+        <li>     |     </li>
+        <li>HOW IT WORKS</li>
+        <li>     |     </li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li>     |     </li>
+        <li>CONNECT</li>
+      </ul>
+    </div>
+    <div class="large-1 columns">
+      <a href="" class="loginbutton"><%= image_tag("lock.png", class: "")%><span class="margin01t"></span></a>
+    </div>
+  </div> 
+
+  <div class="narrow">
+    <div class="large-12 columns text-center">
+      <h2 class="margin1t lineheight05">tips, tricks and teachings</h2>
+      <h5 class="margin2b">from the brains of devonite</h5>
+    </div>
+  </div>
+
+<%= yield %>
+
+  <div class="dgcontainer">
+    <div class="narrow">
+      <div class="large-12 columns text-center">
+        <%= image_tag("footerlogo.png", class: "margin2v")%>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
