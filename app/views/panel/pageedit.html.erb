@@ -3,7 +3,7 @@
     <%= image_tag("logo.png", class: "margin2v padding12h") %>
   </div>
   <div class="large-2 columns text-right">
-    <a href="" class="websitebutton margin1t"><span class="margin01t">BACK TO WEBSITE</span></a>
+    <a href="<%= root_path %>" class="websitebutton margin1t"><span class="margin01t">BACK TO WEBSITE</span></a>
   </div> 
 </div> 
 
@@ -41,13 +41,13 @@
     <div class="row">
       <div class="large-12 columns">
         <ul class="tabs" data-tab>
-          <li class="tab-title active"><a href="#panel2-1">HOME</a></li>
-          <li class="tab-title"><a href="#panel2-2">HOW IT WORKS</a></li>
+          <li class="tab-title active"><a href="#home">HOME</a></li>
+          <li class="tab-title"><a href="#howitworks">HOW IT WORKS</a></li>
           <li class="tab-title"><a href="#panel2-3">BLOG</a></li>
           <li class="tab-title"><a href="#panel2-4">CONNECT</a></li>
         </ul>
         <div class="tabs-tabcontent">
-          <div class="tabcontent active" id="panel2-1">
+          <div class="tabcontent active" id="home">
             <div class="blue content margin2t">
               <notice><%= notice %></notice>
               <%= form_for(@content) do |f| %>
@@ -73,7 +73,7 @@
               <% end %>
             </div>
           </div>
-          <div class="tabcontent" id="panel2-2">
+          <div class="tabcontent" id="howitworks">
             <div class="blue content margin2t">
               <p>Instert second panel content here</p>
             </div>

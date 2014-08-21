@@ -10,6 +10,7 @@ class PanelController < ApplicationController
   end
 
   def statistics
+    @creationTime = "2014-08-20 20:21:02 +0100"
   end
 
   def payment
