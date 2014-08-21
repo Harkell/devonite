@@ -5,13 +5,12 @@ gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use pg as the database for Active Record for heroku compatibility
-gem 'pg'
 
 # sqlight for internal enviroments
 group :development do
     gem 'sqlite3'
 end
-group :production do
+group :production, :staging do
   gem 'pg'
   gem 'rails_12factor'
 end
