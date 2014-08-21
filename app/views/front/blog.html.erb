@@ -1,13 +1,18 @@
+<div class="wcontainer blue">
+
 <% Blogpost.all.each do |post| %>
-  <div class="row blogimg padding2v">
-  	<div class="large-3 columns text-center">
-  		<h3 class="blogdate margin05t"><b><%= post.created_at.to_date.day %><br>
+  <div class="narrow padding2v">
+  	<div class="large-2 columns text-right content">
+  		<h3 class="blogdate"><b><%= post.created_at.to_date.day %><br>
   			<%= Date::ABBR_MONTHNAMES[post.created_at.to_date.month] %></b></h3>
   	</div>
-    <div class="large-9 columns text-left">
+    <div class="large-10 columns text-left content">
       <h1><b><%= post.title %></b></h1>
+      <p class="padding20r"><%= truncate(post.content, :length => 200, :separator => ' ') %></p>
     </div>
   </div>
 <% end %>
+
+</div>
 
 
