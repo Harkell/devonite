@@ -43,7 +43,7 @@
         <ul class="tabs" data-tab>
           <li class="tab-title active"><a href="#home">HOME</a></li>
           <li class="tab-title"><a href="#howitworks">HOW IT WORKS</a></li>
-          <li class="tab-title"><a href="#panel2-3">BLOG</a></li>
+          <li class="tab-title"><a href="#blog">BLOG</a></li>
           <li class="tab-title"><a href="#panel2-4">CONNECT</a></li>
         </ul>
         <div class="tabs-tabcontent">
@@ -78,9 +78,16 @@
               <p>Instert second panel content here</p>
             </div>
           </div>
-          <div class="tabcontent" id="panel2-3">
+          <div class="tabcontent" id="blog">
             <div class="blue content margin2t">
               <p>Instert third panel content here</p>
+              <%= form_for(@blogPost) do |f| %>
+                <%= f.label "Title" %>
+                <%= f.text_field :title %>
+                <%= f.label "Content" %>
+                <%= f.text_area :content %>
+                <%= f.submit "Create Blog Post" %>
+              <% end %>
             </div>
           </div>
           <div class="tabcontent" id="panel2-4">

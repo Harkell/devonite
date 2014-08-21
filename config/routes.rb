@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'panel/pageedit'
   resources :content
+  resources :blogposts
 
   get 'panel/requestchange'
 

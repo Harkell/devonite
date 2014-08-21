@@ -3,7 +3,7 @@ class PanelController < ApplicationController
 
   def pageedit
     @content = Content.find(1)
-
+    @blogPost = Blogpost.new
   end
 
   def requestchange
@@ -15,4 +15,5 @@ class PanelController < ApplicationController
 
   def payment
   end
+
 end

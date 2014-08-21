@@ -1,2 +1,10 @@
 <h1>Front#blog</h1>
 <p>Find me in app/views/front/blog.html.erb</p>
+<% Blogpost.all.each do |post| %>
+	<%= post.title %>
+	<%= post.content %>
+	<% if user_signed_in? %>
+	<%= "Edit" %>
+	<%= "Destroy" %>
+	<% end %>
+<% end %>

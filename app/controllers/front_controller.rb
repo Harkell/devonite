@@ -7,6 +7,7 @@ class FrontController < ApplicationController
   end
 
   def blog
+  	
   end
 
   def connect
