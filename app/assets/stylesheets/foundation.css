@@ -97,6 +97,50 @@
   margin-left: 2em;
 }
 
+.logoutbutton{
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.5em;
+  display: inline-block;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.7rem;
+  background-color: #454545;
+  border-color: #2285a2;
+  color: white;
+  transition: background-color 300ms ease-out;
+}
+
+.logoutbutton:hover{
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.5em;
+  display: inline-block;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.7rem;
+  background-color: #333;
+  border-color: #2285a2;
+  color: white;
+  transition: background-color 300ms ease-out;
+}
+
 .websitebutton{
   border-style: solid;
   border-width: 0px;
@@ -110,8 +154,8 @@
   -webkit-appearance: none;
   -webkit-border-radius: 0.5em;
   display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   font-size: 0.7rem;
   background-color: #749164;
   border-color: #2285a2;
@@ -132,10 +176,8 @@
   -webkit-appearance: none;
   -webkit-border-radius: 0.5em;
   display: inline-block;
-  padding-top: 0.5rem;
-  padding-right: 6rem;
-  padding-bottom: 0.5rem;
-  padding-left: 6rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   font-size: 0.7rem;
   background-color: #6b8b64;
   border-color: #2285a2;
@@ -243,6 +285,11 @@
   line-height: 0;
 }
 
+.padding1h{
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
 .content{
   padding-left: 0.9375em;
   padding-right: 0.9375em;
@@ -254,6 +301,10 @@
 
 .margin05t{
   margin-top: 0.5em;
+}
+
+.margin25t{
+  margin-top: 2.5em;
 }
 
 .margin1v{
