@@ -1,5 +1,5 @@
 class BlogpostsController < ApplicationController
-  before_action :post_find, only: [:destroy]
+  before_action :post_find, only: [:destroy, :edit]
   layout 'blog'
 
   def index

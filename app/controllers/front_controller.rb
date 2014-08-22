@@ -7,10 +7,11 @@ class FrontController < ApplicationController
   end
 
   def blog
+    @blogPosts = Blogpost.all.reverse
+
       respond_to do |format|
       format.html {render :layout => 'blog'}
     end
-    
   end
 
   def connect

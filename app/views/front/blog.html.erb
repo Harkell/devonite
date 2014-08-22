@@ -1,13 +1,13 @@
 <div class="wcontainer blue">
 
-<% Blogpost.all.each do |post| %>
+<% @blogPosts.each do |post| %>
   <div class="narrow padding2v">
   	<div class="large-2 columns text-right content">
   		<h3 class="blogdate"><b><%= post.created_at.to_date.day %><br>
   			<%= Date::ABBR_MONTHNAMES[post.created_at.to_date.month] %></b></h3>
   	</div>
     <div class="large-10 columns text-left content">
-      <h1><b><%= post.title %></b></h1>
+      <h1><b><%= link_to post.title, blogpost_path(post) %></b></h1>
       <p class="padding20r"><%= truncate(post.content, :length => 200, :separator => ' ') %></p>
     </div>
   </div>

@@ -83,7 +83,7 @@
           </div>
           <div class="tabcontent" id="blog">
             <div class="blue content margin2t">
-              <%= form_for(@blogPost) do |f| %>
+              <%= form_for(@blog) do |f| %>
                 <%= f.label "Title" %>
                 <%= f.text_field :title %>
                 <%= f.label "Content" %>
@@ -91,7 +91,7 @@
                 <%= f.submit "Create Blog Post" %>
               <% end %>
               <div class="scrollbox">
-                <% @blogs.each do |post| %>
+                <% @blogPosts.each do |post| %>
                   <div class="row scrollboxrow">
                     <div class="large-2 columns text-left">
                       <%= post.created_at.to_s(:short) %>
@@ -100,7 +100,7 @@
                       <%= post.title %>
                     </div>
                     <div class="large-1 columns text-right red">
-                      <%= link_to 'Edit', root_path %>
+                      <%= link_to 'Edit', edit_blogpost_path(post) %>
                     </div>
                     <div class="large-1 columns text-right red">
                       <%= link_to 'Destroy', post, method: :delete %>
