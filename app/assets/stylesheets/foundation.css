@@ -368,7 +368,13 @@
 }
 
 .padding2v{
-  padding: 2em 0;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.padding1v{
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .margin26t{
@@ -391,6 +397,10 @@
   margin-top: 1em;
 }
 
+.margin15{
+  margin: 1.5em;
+}
+
 .padding12h{
   padding: 0 1.2em;
 }
@@ -401,6 +411,10 @@
 
 .lgcontainer{
   background: #749164;
+}
+
+.lgcontainer2{
+  background: #454545;
 }
 
 .wcontainer{
