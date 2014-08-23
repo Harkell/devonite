@@ -5,6 +5,16 @@
   border: 1px solid #e9e9e9;
 }
 
+.dboverlay{
+  position: absolute;
+  z-index: 5;
+}
+
+.dbheaderborder{
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.7em;
+}
+
 .scrollboxrow{
   background: #efefef;
   padding: 0.7em 3em;
@@ -327,6 +337,10 @@
 .margin4v{
   margin-top: 4em;
   margin-bottom: 4em;
+}
+
+.margin4t{
+  margin-top: 4em;
 }
 
 .margin05t{
