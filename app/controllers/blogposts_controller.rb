@@ -1,16 +1,16 @@
 class BlogpostsController < ApplicationController
-  before_action :post_find, only: [:destroy, :edit]
+  before_action :post_find, only: [:destroy, :edit, :show]
   layout 'blog'
 
   def index
 
   end
-  def new
+  def show
  
   end
 
   def edit
-
+    @blogEdit = @blogPost
   end
 
   def create
@@ -26,7 +26,11 @@ class BlogpostsController < ApplicationController
     end
   end
   def update
-
+    if @blogPost.update
+      redirect_to front_blog_path, notice: 'Post was successfully updated.'
+    else
+      redirect_to front_blog_path, notice: 'Post was not successfully updated.'
+    end
   end
   def destroy
     if @blogPost.destroy
