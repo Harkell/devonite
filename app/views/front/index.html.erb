@@ -68,16 +68,32 @@
 
   <div class="grcontainer">
     <div class="row">
-      <div class="large-3 columns text-left">
-        <%= image_tag("cave1.png") %>
+      <div class="large-6 columns text-right">
+        <h2 class="margin2t">I need a website for my</h2>
       </div>
-      <div class="large-6 columns text-center">
-        <h2 class="margin2t"><%== @content.section3header1 %></h2>
-        <p class="margin2v"><%== @content.section3paragraph1 %></p>
-        <a href="" class="wbutton margin1t margin7b"><span class="margin01t black">GET STARTED</span></a>
+      <div class="large-2 columns text-center">
+        <h2 class="margin2t"><span class="typed"></span></h2>
       </div>
-      <div class="large-3 columns text-right">
-        <%= image_tag("cave2.png") %>
+      <div class="large-4 columns text-left">
+        <h2 class="margin2t">business.</h2>
       </div>
+      <div class="row">
+        <div class="large-12 columns text-center">
+          <a href="<%= front_howitworks_path%>" class="wbutton margin2t margin7b"><span class="margin01t black">GREAT! LETS GET STARTED</span></a>
+        </div>
     </div>
   </div>
+
+      <script src="assets/javascripts/jquery.js"></script>
+      <script src="assets/javascripts/typed.js"></script>
+      <script>
+        $(function(){
+            $(".typed").typed({
+              strings: ["plumbing", "accounting", "decoration", "print", "music", "B&B", "landscape", "jewellery", "marketing", "mechanic", "cafe", "nursery", "real estate", "removals" ],
+              typeSpeed: 100,
+              backDelay: 1000,
+              loop: true,
+              loopCount: false,
+            });
+        });
+      </script>
