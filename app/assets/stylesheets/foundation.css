@@ -10,10 +10,14 @@
   padding: 0.7em 3em;
 }
 
+.blogheader{
+  font-size: 2em;
+}
+
 .blogimg{
   background: url("http://i.imgur.com/Z1l70mW.jpg");
   background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-repeat: no-repeatfnar;
 }
 
 .nav{
@@ -301,6 +305,10 @@
   line-height: 0;
 }
 
+.height15{
+  height: 15em;
+}
+
 .padding1h{
   padding-right: 1em;
   padding-left: 1em;
@@ -312,7 +320,13 @@
 }
 
 .margin2v{
-  margin: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.margin4v{
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 
 .margin05t{
@@ -578,6 +592,48 @@ textarea {
 
 select {
   width: 100%; }
+
+
+.narrower {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 50em }
+  .narrower:before, .narrower:after {
+    content: " ";
+    display: table; }
+  .narrower:after {
+    clear: both; }
+  .narrower.collapse > .column,
+  .narrower.collapse > .columns {
+    padding-left: 0;
+    padding-right: 0; }
+  .narrower.collapse .narrow {
+    margin-left: 0;
+    margin-right: 0; }
+  .narrower .narrow {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none; }
+    .narrower .narrower:before, .narrower .narrower:after {
+      content: " ";
+      display: table; }
+    .narrower .narrower:after {
+      clear: both; }
+    .narrower .narrower.collapse {
+      width: auto;
+      margin: 0;
+      max-width: none; }
+      .narrower .narrower.collapse:before, .narrower .narrower.collapse:after {
+        content: " ";
+        display: table; }
+      .narrower .narrower.collapse:after {
+        clear: both; }
 
 .narrow {
   width: 100%;

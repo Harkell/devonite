@@ -7,7 +7,7 @@
   			<%= Date::ABBR_MONTHNAMES[post.created_at.to_date.month] %></b></h3>
   	</div>
     <div class="large-10 columns text-left content">
-      <h1><b><%= link_to post.title, blogpost_path(post) %></b></h1>
+      <h1 class="blogheader"><b><%= link_to post.title, blogpost_path(post) %></b></h1>
       <p class="padding20r"><%= truncate(post.content, :length => 200, :separator => ' ') %></p>
     </div>
   </div>
