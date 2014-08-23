@@ -1,5 +1,5 @@
 class BlogpostsController < ApplicationController
-  before_action :post_find, only: [:destroy, :edit, :show]
+  before_action :post_find, only: [:destroy, :edit, :show, :update]
   layout 'blog'
 
   def index
@@ -26,7 +26,7 @@ class BlogpostsController < ApplicationController
     end
   end
   def update
-    if @blogPost.update
+    if @blogPost.update(blog_params)
       redirect_to front_blog_path, notice: 'Post was successfully updated.'
     else
       redirect_to front_blog_path, notice: 'Post was not successfully updated.'
