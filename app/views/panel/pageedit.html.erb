@@ -43,16 +43,33 @@
     </div>
     <div class="row">
       <div class="large-12 columns">
-        <ul class="tabs" data-tab>
-          <li class="tab-title active"><a href="#home">HOME</a></li>
-          <li class="tab-title"><a href="#howitworks">HOW IT WORKS</a></li>
-          <li class="tab-title"><a href="#blog">BLOG</a></li>
-          <li class="tab-title"><a href="#panel2-4">CONNECT</a></li>
-        </ul>
+        <div class="margin2b">
+          <ul class="tabs" data-tab>
+            <li class="tab-title active"><a href="#home">HOME</a></li>
+            <li class="tab-title"><a href="#howitworks">HOW IT WORKS</a></li>
+            <li class="tab-title"><a href="#blog">BLOG</a></li>
+            <li class="tab-title"><a href="#panel2-4">CONNECT</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="large-12 columns content">
+            <% if flash[:notice] %>
+              <div data-alert class="alert-box success radius content">
+                <%= notice %>
+                <a href="" class="close">&times;</a>
+              </div>
+            <% end %>
+            <% if flash[:alert] %>
+              <div data-alert class="alert-box alert radius content">
+                  <%= alert %>
+                <a href="" class="close">&times;</a>
+              </div>
+            <% end %>
+          </div>
+        </div>
         <div class="tabs-tabcontent">
           <div class="tabcontent active" id="home">
-            <div class="blue content margin2t">
-              <notice><%= notice %></notice>
+            <div class="blue content">
               <%= form_for(@content) do |f| %>
                 <%= f.label "First Header" %>
                 <%= f.text_field :header1 %>
