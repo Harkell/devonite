@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :content
   resources :blogposts
 
+  resources :charges
+
   get 'panel/requestchange'
 
   get 'panel/statistics'

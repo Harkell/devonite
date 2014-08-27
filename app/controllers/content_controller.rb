@@ -12,7 +12,7 @@ class ContentController < ApplicationController
     		end
     	else
     		respond_to do |format|
-    			format.html {redirect_to panel_pageedit_path, notice: 'Error updating content.'}
+    			format.html {redirect_to panel_pageedit_path, alert: 'Error updating content.'}
     		end
     	end
 	end

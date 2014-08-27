@@ -39,8 +39,22 @@
   </div>
 </div> 
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<div class="narrow">
+  <div class="large-12 columns content">
+    <% if flash[:notice] %>
+      <div data-alert class="alert-box success radius content">
+        <%= notice %>
+        <a href="" class="close">&times;</a>
+      </div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div data-alert class="alert-box alert radius content">
+          <%= alert %>
+        <a href="" class="close">&times;</a>
+      </div>
+    <% end %>
+  </div>
+</div>
 
 <%= yield %>
 

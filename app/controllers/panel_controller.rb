@@ -17,6 +17,7 @@ class PanelController < ApplicationController
   end
 
   def payment
+
   end
 
 end
