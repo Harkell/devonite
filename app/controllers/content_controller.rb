@@ -28,8 +28,8 @@ class ContentController < ApplicationController
 	end
 
 	def content_params
-		params.require(:content).permit(:header1, :header2, :section1header1, :section1paragraph1, :section2header1, :section2paragraph1, 
-			:section2paragraph2, :section3header1, :section3paragraph1)
+		params.require(:content).permit(:section11, :section2, :section3, :section4, :section5, :section6, 
+			:section7, :section8, :section9)
 	end
 
 end

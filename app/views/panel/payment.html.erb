@@ -47,8 +47,12 @@
   <div class="pcontainer">
   </div>
 </div>
-You are due to pay your subscription.
-<%= link_to 'To begin your subscription with devonite, click here.', new_charge_path %>
+<% if @subscription == false %>
+  <%= "You are due to pay your subscription." %>
+  <%= link_to 'To begin your subscription with devonite, click here.', new_charge_path %>
+<% else %>
+  <%= "Your devonite subscription is active." %>
+<% end %>
   <div class="dgcontainer">
     <div class="narrow">
       <div class="large-12 columns text-center">

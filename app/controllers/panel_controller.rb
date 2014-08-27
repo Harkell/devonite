@@ -3,6 +3,7 @@ class PanelController < ApplicationController
 
   def pageedit
     @content = Content.find(1)
+    #@content2 = Content.find(2)
     @blog = Blogpost.new
     @blogPosts = Blogpost.all.reverse
   
@@ -17,7 +18,7 @@ class PanelController < ApplicationController
   end
 
   def payment
-
+    @subscription = Subscription.first.subscribed
   end
 
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140821110914) do
+ActiveRecord::Schema.define(version: 20140827200925) do
 
   create_table "blogposts", force: true do |t|
     t.string   "title"
@@ -22,15 +22,32 @@ ActiveRecord::Schema.define(version: 20140821110914) do
   end
 
   create_table "contents", force: true do |t|
-    t.text     "header1"
-    t.text     "header2"
-    t.text     "section1header1"
-    t.text     "section1paragraph1"
-    t.text     "section2header1"
-    t.text     "section2paragraph1"
-    t.text     "section2paragraph2"
-    t.text     "section3header1"
-    t.text     "section3paragraph1"
+    t.text     "section1"
+    t.text     "section2"
+    t.text     "section3"
+    t.text     "section4"
+    t.text     "section5"
+    t.text     "section6"
+    t.text     "section7"
+    t.text     "section8"
+    t.text     "section9"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "section10"
+    t.text     "section11"
+    t.text     "section12"
+    t.text     "section13"
+    t.text     "section14"
+    t.text     "section15"
+    t.text     "section16"
+    t.text     "section17"
+    t.text     "section18"
+    t.text     "section19"
+    t.text     "section20"
+  end
+
+  create_table "subscriptions", force: true do |t|
+    t.boolean  "subscribed"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
