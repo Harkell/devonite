@@ -1,0 +1,92 @@
+<div class="narrow">
+  <div class="large-9 columns text-left">
+    <%= image_tag("logo.png", class: "margin2v padding12h") %>
+  </div>
+  <div class="large-2 columns text-right">
+    <a href="<%= root_path %>" class="websitebutton margin25t margin2b"><span class="margin1v padding1h">BACK TO WEBSITE</span></a>
+  </div> 
+  <div class="large-1 columns text-right">
+    <%= link_to(destroy_user_session_path, :method => :delete) do %><div class="logoutbutton margin25t margin2b"><span class="margin1v padding1h">LOGOUT</span></div><% end %>
+  </div> 
+</div> 
+
+<div class="narrow">
+  <div class="pcontainer">
+    <div class="row lineheight0">
+      <div class="large-12 columns">
+        <div class="icon-bar four-up">
+          <%= link_to(panel_statistics_path, class: "item") do %>
+            <%= image_tag "icon1.png" %>
+            <label>Dashboard</label>
+          <% end %>
+          <%= link_to(panel_pageedit_path, class: "item") do %>
+            <%= image_tag "icon2.png" %>
+            <label>Edit Content</label>
+          <% end %>
+          <%= link_to(panel_requestchange_path, class: "item") do %>
+            <%= image_tag "icon3.png" %>
+            <label>Request Change</label>
+          <% end %>
+          <%= link_to(panel_payment_path, class: "item") do %>
+            <%= image_tag "icon4.png" %>
+            <label>Manage Payments</label>
+          <% end %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <div class="gcontainer">
+          <h4 class="margin0 padding07v">Dashboard</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="narrow">
+  <div class="pcontainer">
+    <div class="row lgcontainer2">
+      <div class="large-6 columns">
+        <p class="lineheight0 margin15">welcome, <%= current_user.email %></p>
+      </div>
+      <div class="large-6 columns text-right">
+        <p class="lineheight0 margin15"><%= Time.now.to_date.to_formatted_s(:long_ordinal) %> | <%= Time.now.strftime('%R') %></p>
+      </div>
+    </div>
+    <div class="row padding2v">
+      <div class="large-3 columns content text-center">
+        <div class="bcontainer padding1v">
+          <h1><%= time_ago_in_words(@creationTime) %></h1>
+          <p>days online</p>
+        </div>
+      </div>
+      <div class="large-3 columns content text-center">
+        <div class="bcontainer padding1v">
+          <h1>3,000</h1>
+          <p>page views</p>
+        </div>
+      </div>
+      <div class="large-3 columns content text-center">
+        <div class="bcontainer padding1v">
+          <h1>2</h1>
+          <p>dickheads</p>
+        </div>
+      </div>
+      <div class="large-3 columns content text-center">
+        <div class="bcontainer padding1v">
+          <h1><%= @blogCount %></h1>
+          <p>blog posts</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="dgcontainer">
+    <div class="narrow">
+      <div class="large-12 columns text-center">
+        <%= image_tag("footerlogo.png", class: "margin2v") %>
+      </div>
+    </div>
+  </div>

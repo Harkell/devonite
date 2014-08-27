@@ -1,0 +1,27 @@
+<%= form_for(@blogEdit) do |f| %>
+  <div class="row blogimg">
+  	<div class="large-3 columns">
+  		<br>
+  	</div>
+    <div class="large-6 columns text-center">
+			<div class="margin4v"><%= f.text_field(:title, class: "") %></div>
+    </div>
+    <div class="large-3 columns">
+    	<br>
+    </div>
+  </div>
+  <div class="row wcontainer">
+  	<div class="large-3 columns">
+  		<br>
+  	</div>
+  	<div class="large-6 columns">
+  		<div class="margin4v">
+				<%= f.text_area(:content, class: "height15") %>
+				<%= f.submit "Update Blog Post" %>
+			</div>
+		</div>
+		<div class="large-3 columns">
+			<br>
+		</div>
+	</div>
+<% end %>
