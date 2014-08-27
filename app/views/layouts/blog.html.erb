@@ -12,7 +12,7 @@
 <body class="bcontainer">
 
     
-  <div class="narrow">
+  <div class="navrow">
     <div class="large-2 columns left">
       <%= image_tag("footerlogo.png", class: "margin2v padding12h") %>
     </div>
@@ -20,11 +20,11 @@
       <ul class="inline-list nav margin26t right">
         <li><a href="<%= root_path %>">HOME</a></li>
         <li>     |     </li>
-        <li>HOW IT WORKS</li>
+        <li><a href="<%= front_howitworks_path %>">HOW IT WORKS</a></li>
         <li>     |     </li>
         <li><a href="<%= front_blog_path %>">BLOG</a></li>
         <li>     |     </li>
-        <li>CONNECT</li>
+        <li><a href="<%= front_support_path %>">SUPPORT</a></li>
       </ul>
     </div>
     <div class="large-1 columns">
