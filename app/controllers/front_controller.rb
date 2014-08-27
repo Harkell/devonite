@@ -14,6 +14,6 @@ class FrontController < ApplicationController
     end
   end
 
-  def connect
+  def support
   end
 end
