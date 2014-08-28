@@ -4,8 +4,7 @@ class PanelController < ApplicationController
   def pageedit
     @content = Content.find(1)
     #@content2 = Content.find(2)
-    @blog = Blogpost.new
-    @blogPosts = Blogpost.all.reverse
+
   
   end
 
@@ -15,10 +14,12 @@ class PanelController < ApplicationController
   def statistics
     @creationTime = "2014-08-20 20:21:02 +0100"
     @blogCount = Blogpost.all.count
+    @subscription = Subscription.first.subscribed
   end
 
-  def payment
-    @subscription = Subscription.first.subscribed
+  def blog
+    @blog = Blogpost.new
+    @blogPosts = Blogpost.all.reverse
   end
 
 end

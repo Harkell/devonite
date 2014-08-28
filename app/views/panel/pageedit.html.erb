@@ -1,46 +1,14 @@
+<%= render "bar" %>
 <div class="narrow">
-  <div class="large-9 columns text-left">
-    <%= image_tag("logo.png", class: "margin2v padding12h") %>
+  <div class="large-12 columns text-center">
+    <div class="gcontainer">
+      <h4 class="margin0 padding07v">Edit Content</h4>
+    </div>
   </div>
-  <div class="large-2 columns text-right">
-    <a href="<%= root_path %>" class="websitebutton margin25t margin2b"><span class="margin1v padding1h">BACK TO WEBSITE</span></a>
-  </div> 
-  <div class="large-1 columns text-right">
-    <%= link_to(destroy_user_session_path, :method => :delete) do %><div class="logoutbutton margin25t margin2b"><span class="margin1v padding1h">LOGOUT</span></div><% end %>
-  </div> 
-</div> 
+</div>
 
 <div class="narrow">
   <div class="pcontainer">
-    <div class="row lineheight0">
-      <div class="large-12 columns">
-        <div class="icon-bar four-up">
-          <%= link_to(panel_statistics_path, class: "item") do %>
-            <%= image_tag "icon1.png" %>
-            <label>Dashboard</label>
-          <% end %>
-          <%= link_to(panel_pageedit_path, class: "item") do %>
-            <%= image_tag "icon2.png" %>
-            <label>Edit Content</label>
-          <% end %>
-          <%= link_to(panel_requestchange_path, class: "item") do %>
-            <%= image_tag "icon3.png" %>
-            <label>Request Change</label>
-          <% end %>
-          <%= link_to(panel_payment_path, class: "item") do %>
-            <%= image_tag "icon4.png" %>
-            <label>Manage Payments</label>
-          <% end %>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns text-center">
-        <div class="gcontainer">
-          <h4 class="margin0 padding07v">Edit Content</h4>
-        </div>
-      </div>
-    </div>
     <div class="row">
       <div class="large-12 columns">
         <div class="margin2b">
@@ -100,31 +68,7 @@
           </div>
           <div class="tabcontent" id="blog">
             <div class="blue content margin2t">
-              <%= form_for(@blog) do |f| %>
-                <%= f.label "Title" %>
-                <%= f.text_field :title %>
-                <%= f.label "Content" %>
-                <%= f.text_area :content %>
-                <%= f.submit "Create Blog Post" %>
-              <% end %>
-              <div class="scrollbox">
-                <% @blogPosts.each do |post| %>
-                  <div class="row scrollboxrow">
-                    <div class="large-2 columns text-left">
-                      <%= post.created_at.to_s(:short) %>
-                    </div>
-                    <div class="large-8 columns text-left">
-                      <%= post.title %>
-                    </div>
-                    <div class="large-1 columns text-right red">
-                      <%= link_to 'Edit', edit_blogpost_path(post) %>
-                    </div>
-                    <div class="large-1 columns text-right red">
-                      <%= link_to 'Destroy', post, method: :delete %>
-                    </div>
-                  </div>
-                <% end %>
-              </div>
+              <p>Instert third panel content here</p>
             </div>
           </div>
           <div class="tabcontent" id="panel2-4">
@@ -137,6 +81,7 @@
     </div>
   </div>
 </div>
+
   <div class="dgcontainer">
     <div class="narrow">
       <div class="large-12 columns text-center">

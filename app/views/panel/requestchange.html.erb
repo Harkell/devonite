@@ -1,50 +1,14 @@
+<%= render "bar" %>
 <div class="narrow">
-  <div class="large-9 columns text-left">
-    <%= image_tag("logo.png", class: "margin2v padding12h") %>
-  </div>
-  <div class="large-2 columns text-right">
-    <a href="<%= root_path %>" class="websitebutton margin25t margin2b"><span class="margin1v padding1h">BACK TO WEBSITE</span></a>
-  </div> 
-  <div class="large-1 columns text-right">
-    <%= link_to(destroy_user_session_path, :method => :delete) do %><div class="logoutbutton margin25t margin2b"><span class="margin1v padding1h">LOGOUT</span></div><% end %>
-  </div> 
-</div> 
-
-<div class="narrow">
-  <div class="pcontainer">
-    <div class="row lineheight0">
-      <div class="large-12 columns">
-        <div class="icon-bar four-up">
-          <%= link_to(panel_statistics_path, class: "item") do %>
-            <%= image_tag "icon1.png" %>
-            <label>Dashboard</label>
-          <% end %>
-          <%= link_to(panel_pageedit_path, class: "item") do %>
-            <%= image_tag "icon2.png" %>
-            <label>Edit Content</label>
-          <% end %>
-          <%= link_to(panel_requestchange_path, class: "item") do %>
-            <%= image_tag "icon3.png" %>
-            <label>Request Change</label>
-          <% end %>
-          <%= link_to(panel_payment_path, class: "item") do %>
-            <%= image_tag "icon4.png" %>
-            <label>Manage Payments</label>
-          <% end %>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns text-center">
-        <div class="gcontainer">
-          <h4 class="margin0 padding07v">Request Change</h4>
-        </div>
-      </div>
+  <div class="large-12 columns text-center">
+    <div class="gcontainer">
+      <h4 class="margin0 padding07v">Request Change</h4>
     </div>
   </div>
 </div>
+
 <div class="narrow">
-  <div class="pcontainer">
+  <div class="pcontainer blue">
   </div>
 </div>
 

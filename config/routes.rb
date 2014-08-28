@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   get 'panel/statistics'
 
-  get 'panel/payment'
+  get 'panel/blog'
 
   devise_for :users
   root 'front#index'

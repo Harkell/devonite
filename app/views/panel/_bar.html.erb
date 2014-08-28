@@ -27,40 +27,12 @@
             <%= image_tag "icon3.png" %>
             <label>Request Change</label>
           <% end %>
-          <%= link_to(panel_payment_path, class: "item") do %>
+          <%= link_to(panel_blog_path, class: "item") do %>
             <%= image_tag "icon4.png" %>
-            <label>Manage Payments</label>
+            <label>Manage Blog</label>
           <% end %>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="large-12 columns text-center">
-        <div class="gcontainer">
-          <h4 class="margin0 padding07v">Manage Payments</h4>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
-<div class="narrow">
-  <div class="pcontainer blue content">
-    <div class="row lineheight0">
-      <div class="large-12 columns text-center">
-        <% if @subscription == false %>
-          <h3 class="margin2t">You are due to pay your subscription</h3><br>
-          <h4 class="margin2b"><%= link_to 'To begin your subscription with devonite, click here.', new_charge_path %></h4>
-        <% else %>
-          <h3 class="margin2v">Your devonite subscription is <b>active</b>.</h3>
-        <% end %>
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="dgcontainer">
-    <div class="narrow">
-      <div class="large-12 columns text-center">
-        <%= image_tag("footerlogo.png", class: "margin2v") %>
-      </div>
-    </div>
-  </div>
