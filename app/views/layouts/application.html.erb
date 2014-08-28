@@ -27,15 +27,7 @@
     </ul>
   </div>
   <div class="large-1 columns">
-    <% if user_signed_in? %>
-      <%= link_to(panel_statistics_path) do %>
-        <div class="loginbutton"><%= image_tag("lock.png", class: "") %><span class="margin01t"></span></div>
-      <% end %>
-    <% else %>
-      <%= link_to(new_user_session_path) do %>
-        <div class="loginbutton"><%= image_tag("lock.png", class: "") %><span class="margin01t"></span></div>
-      <% end %>
-    <% end %>
+    <a href="http://www.twitter.com/devoniteuk" target="_blank"><div class="loginbutton"><%= image_tag("twitterbird.png", class: "") %><span class="margin01t"></span></div></a>
   </div>
 </div> 
 
@@ -61,7 +53,15 @@
   <div class="dgcontainer">
     <div class="narrow">
       <div class="large-12 columns text-center">
-        <%= image_tag("footerlogo.png", class: "margin2v") %>
+        <% if user_signed_in? %>
+          <%= link_to(panel_statistics_path) do %>
+            <%= image_tag("footerlogo.png", class: "margin2v") %>
+          <% end %>
+          <% else %>
+            <%= link_to(new_user_session_path) do %>
+              <%= image_tag("footerlogo.png", class: "margin2v") %>
+            <% end %>
+        <% end %>
       </div>
     </div>
   </div>
