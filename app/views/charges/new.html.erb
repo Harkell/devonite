@@ -8,5 +8,6 @@
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="Subscribe to devonite"
-          data-amount="5000"></script>
+          data-amount="5000"
+          data-currency="gbp"></script>
 <% end %>
