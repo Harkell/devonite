@@ -44,7 +44,7 @@
       </div>
     </div>
     <div class="row text-center blue">
-      <% if @subscription == false %>
+      <% if @subscription == true %>
         <h3 class="margin2t">You are due to pay your subscription</h3><br>
         <h4 class="margin2b"><%= link_to 'To begin your subscription with devonite, click here.', new_charge_path %></h4>
       <% else %>

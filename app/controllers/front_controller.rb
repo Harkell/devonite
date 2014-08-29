@@ -8,12 +8,12 @@ class FrontController < ApplicationController
 
   def blog
     @blogPosts = Blogpost.all.reverse
-
-      respond_to do |format|
+    respond_to do |format|
       format.html {render :layout => 'blog'}
     end
   end
 
   def support
+
   end
 end
