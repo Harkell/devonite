@@ -9,7 +9,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="bcontainer">
+<body class="grcontainer">
 
     
   <div class="navrow">
@@ -44,7 +44,15 @@
   <div class="dgcontainer">
     <div class="narrow">
       <div class="large-12 columns text-center">
-        <%= image_tag("footerlogo.png", class: "margin2v")%>
+        <% if user_signed_in? %>
+          <%= link_to(panel_statistics_path) do %>
+            <%= image_tag("footerlogo.png", class: "margin2v") %>
+          <% end %>
+          <% else %>
+            <%= link_to(new_user_session_path) do %>
+              <%= image_tag("footerlogo.png", class: "margin2v") %>
+            <% end %>
+        <% end %>
       </div>
     </div>
   </div>
