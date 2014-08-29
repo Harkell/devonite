@@ -28,7 +28,7 @@ class ContentController < ApplicationController
 	end
 
 	def content_params
-		params.require(:content).permit(:section11, :section2, :section3, :section4, :section5, :section6, 
+		params.require(:content).permit(:section1, :section2, :section3, :section4, :section5, :section6, 
 			:section7, :section8, :section9)
 	end
 
