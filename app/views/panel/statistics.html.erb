@@ -11,10 +11,10 @@
   <div class="pcontainer">
     <div class="row lgcontainer2">
       <div class="large-6 columns">
-        <p class="lineheight0 margin15">welcome, <%= current_user.email %></p>
+        <p class="lineheight0 margin15 thin">Welcome, <%= current_user.email %> | <%= link_to "Edit Account", edit_user_registration_path %></p>
       </div>
       <div class="large-6 columns text-right">
-        <p class="lineheight0 margin15"><%= Time.now.to_date.to_formatted_s(:long_ordinal) %> | <%= Time.now.strftime('%R') %></p>
+        <p class="lineheight0 margin15 thin"><%= Time.now.to_date.to_formatted_s(:long_ordinal) %> | <%= Time.now.strftime('%R') %></p>
       </div>
     </div>
     <div class="row padding2v">
@@ -43,17 +43,18 @@
         </div>
       </div>
     </div>
-    <div class="row text-center blue">
-      <% if @subscription == true %>
-        <h3 class="margin2t">You are due to pay your subscription</h3><br>
-        <h4 class="margin2b"><%= link_to 'To begin your subscription with devonite, click here.', new_charge_path %></h4>
-      <% else %>
-        <h3 class="margin2v">Your devonite subscription is <b>active</b>.</h3>
-      <% end %>
+    <div class="row">
+      <div class="large-12 columns text-center blue">
+        <% if @subscription == true %>
+          <h3 class="margin2t">You are due to pay your subscription</h3><br>
+          <h4 class="margin2b"><%= link_to 'To begin your subscription with devonite, click here.', new_charge_path %></h4>
+        <% else %>
+          <h3 class="margin2v">Your devonite subscription is <b>active</b>.</h3>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
-<%= link_to "Click here to change your account password", edit_user_registration_path %>
 <div class="dgcontainer">
   <div class="narrow">
     <div class="large-12 columns text-center">

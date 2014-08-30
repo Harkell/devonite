@@ -14,6 +14,8 @@ class FrontController < ApplicationController
   end
 
   def support
-
+    respond_to do |format|
+      format.html {render :layout => 'support'}
+    end
   end
 end
