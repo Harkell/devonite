@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Devonite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="">
+
+
+<div class="narrower">
+  <div class="large-2 columns">
+    <br>
+  </div>
+  <div class="large-8 columns wcontainer text-center margin4t chargeborder">
+    <%= image_tag("logo.png", class: "margin2v") %>
+    <div class="chargesplitborder">
+    </div>
+    <% if user_signed_in? %>
+      <div class="margin2v"><%= yield %></div>
+    <% else %>
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <h1>Not Logged In.</h1>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div class="large-2 columns">
+    <br>
+  </div>
+</div>
+
+    <script src="assets/javascripts/jquery.js"></script>
+    <script src="assets/javascripts/foundation.js"></script>
+    <script src="assets/javascripts/foundation.tab.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+</body>
+</html>

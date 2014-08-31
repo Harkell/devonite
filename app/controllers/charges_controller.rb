@@ -1,5 +1,5 @@
 class ChargesController < ApplicationController
-layout 'panel'
+layout 'charge'
 
 def new
 end

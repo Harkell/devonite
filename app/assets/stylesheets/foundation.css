@@ -483,6 +483,16 @@ input[type="submit"] {
   padding: 0 1em 0 0;
 }
 
+.padding2h{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.padding2t2b{
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 .margin4l{
   margin-right: 4em;
 }
@@ -573,6 +583,10 @@ input[type="submit"] {
   line-height: 0.5em;
 }
 
+.lineheight2{
+  line-height: 2em;
+}
+
 .pcontainer{
   background: #fff;
   border-left: solid 2px #333333;
@@ -582,6 +596,16 @@ input[type="submit"] {
 .pbg{
   background: #e1feff url("http://d.cjshort.co.uk/img/mountains.png") no-repeat;
   background-position: center bottom;
+}
+
+.chargeborder{
+  border-top: 10px #1e4b67 solid;
+  border-radius: 3px;
+  border-bottom: 3px #ececec solid;
+}
+
+.chargesplitborder{
+  border-top: 1px solid #ececec;
 }
 
 .seamountain{

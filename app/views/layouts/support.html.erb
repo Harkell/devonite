@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Devonite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="grcontainer">
+
+    
+  <div class="navrow">
+    <div class="large-2 columns left">
+      <%= image_tag("footerlogo.png", class: "margin2v padding12h") %>
+    </div>
+    <div class="large-9 columns">
+      <ul class="inline-list nav margin26t right">
+        <li><a href="<%= root_path %>">HOME</a></li>
+        <li>     |     </li>
+        <li><a href="<%= front_howitworks_path %>">HOW IT WORKS</a></li>
+        <li>     |     </li>
+        <li><a href="<%= front_blog_path %>">BLOG</a></li>
+        <li>     |     </li>
+        <li><a href="<%= front_support_path %>">SUPPORT</a></li>
+      </ul>
+    </div>
+    <div class="large-1 columns">
+      <a href="http://www.twitter.com/devoniteuk" target="_blank"><div class="loginbutton"><%= image_tag("twitterbird.png", class: "") %><span class="margin01t"></span></div></a>
+    </div>
+  </div>
+
+<%= yield %>
+
+  <div class="dgcontainer">
+    <div class="narrow">
+      <div class="large-12 columns text-center">
+        <% if user_signed_in? %>
+          <%= link_to(panel_statistics_path) do %>
+            <%= image_tag("footerlogo.png", class: "margin2v") %>
+          <% end %>
+          <% else %>
+            <%= link_to(new_user_session_path) do %>
+              <%= image_tag("footerlogo.png", class: "margin2v") %>
+            <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
