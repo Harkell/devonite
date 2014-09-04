@@ -11,34 +11,6 @@
 </head>
 <body class="grcontainer">
 
-    
-  <div class="navrow">
-    <div class="large-2 columns left">
-      <%= image_tag("footerlogo.png", class: "margin2v padding12h") %>
-    </div>
-    <div class="large-9 columns">
-      <ul class="inline-list nav margin26t right">
-        <li><a href="<%= root_path %>">HOME</a></li>
-        <li>     |     </li>
-        <li><a href="<%= front_howitworks_path %>">HOW IT WORKS</a></li>
-        <li>     |     </li>
-        <li><a href="<%= front_blog_path %>">BLOG</a></li>
-        <li>     |     </li>
-        <li><a href="<%= front_support_path %>">SUPPORT</a></li>
-      </ul>
-    </div>
-    <div class="large-1 columns">
-      <a href="http://www.twitter.com/devoniteuk" target="_blank"><div class="loginbutton"><%= image_tag("twitterbird.png", class: "") %><span class="margin01t"></span></div></a>
-    </div>
-  </div> 
-
-  <div class="narrow">
-    <div class="large-12 columns text-center">
-      <h2 class="margin1t lineheight05">tips, tricks and teachings</h2>
-      <h5 class="margin2b">from the brains of devonite</h5>
-    </div>
-  </div>
-
 <%= yield %>
 
   <div class="dgcontainer">
