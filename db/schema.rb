@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20140827200925) do
     t.text     "section7"
     t.text     "section8"
     t.text     "section9"
-    t.boolean  "subscription"
+
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "section10"
