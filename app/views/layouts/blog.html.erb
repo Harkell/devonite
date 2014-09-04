@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Devonite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="grcontainer">
+
+<%= yield %>
+
+  <div class="dgcontainer">
+    <div class="narrow">
+      <div class="large-12 columns text-center">
+        <% if user_signed_in? %>
+          <%= link_to(panel_statistics_path) do %>
+            <%= image_tag("footerlogo.png", class: "margin2v") %>
+          <% end %>
+          <% else %>
+            <%= link_to(new_user_session_path) do %>
+              <%= image_tag("footerlogo.png", class: "margin2v") %>
+            <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

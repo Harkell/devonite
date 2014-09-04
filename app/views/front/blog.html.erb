@@ -1,0 +1,63 @@
+<div class="blogimg">  
+  <div class="navrow">
+    <div class="large-2 columns left">
+      <%= image_tag("footerlogo.png", class: "margin2v padding12h") %>
+    </div>
+    <div class="large-9 columns">
+      <ul class="inline-list nav margin26t right">
+        <li><a href="<%= root_path %>">HOME</a></li>
+        <li>     |     </li>
+        <li><a href="<%= front_howitworks_path %>">HOW IT WORKS</a></li>
+        <li>     |     </li>
+        <li><a href="<%= front_blog_path %>">BLOG</a></li>
+        <li>     |     </li>
+        <li><a href="<%= front_support_path %>">SUPPORT</a></li>
+      </ul>
+    </div>
+    <div class="large-1 columns">
+      <a href="http://www.twitter.com/devoniteuk" target="_blank"><div class="loginbutton"><%= image_tag("twitterbird.png", class: "") %><span class="margin01t"></span></div></a>
+    </div>
+  </div> 
+
+  <div class="narrow">
+    <div class="large-12 columns text-left content">
+      <div class="margin5t">
+        <h4 class="sanchez grey">2nd September</h4>
+        <h2><b>Social media and why you should use it<b></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="narrow">
+    <div class="large-9 columns text-left content">
+      <p class="font09">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  </div>
+
+  <div class="narrow">
+    <div class="large-2 columns text-center content">
+      <div class="margin5b">
+        <p class="sanchez readmore">Read More</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wcontainer black">
+
+<% @blogPosts.each do |post| %>
+  <div class="narrow padding2v">
+  	<div class="large-2 columns text-right content">
+  		<h3 class="blogdate"><b><%= post.created_at.to_date.day %><br>
+  			<%= Date::ABBR_MONTHNAMES[post.created_at.to_date.month] %></b></h3>
+  	</div>
+    <div class="large-10 columns text-left content">
+      <h1 class="blogheader"><b><%= link_to post.title, blogpost_path(post) %></b></h1>
+      <p class="padding20r"><%= truncate(post.content, :length => 200, :separator => ' ') %></p>
+    </div>
+  </div>
+<% end %>
+
+</div>
+
+
