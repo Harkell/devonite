@@ -11,7 +11,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
   address: "smtp.1and1.com",
   port: 587,
-  domain: "1and1.com,
+  domain: "1and1.com",
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: "callum@devonite.co.uk",
