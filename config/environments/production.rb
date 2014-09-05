@@ -15,7 +15,7 @@ Rails.application.configure do
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: "callum@devonite.co.uk",
-  password: ""
+  password: "calloveslou100"
   }
 
 
