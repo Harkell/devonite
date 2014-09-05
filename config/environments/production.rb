@@ -1,6 +1,32 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+
+  # Mailer code (JHS)
+
+  config.action_mailer.default_url_options = { :host => 'http://devonite.herokuapp.com' }
+
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+  address: "smtp.1and1.com",
+  port: 587,
+  domain: "1and1.com,
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: "callum@devonite.co.uk",
+  password: ""
+  }
+
+
+
+
+  config.action_mailer.raise_delivery_errors = true
+
+  config.action_mailer.perform_deliveries = true
+
+  config.action_mailer.default :charset => "utf-8"
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
