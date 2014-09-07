@@ -14,6 +14,7 @@ class FrontController < ApplicationController
   end
 
   def support
+    @contact = Contact.new
     respond_to do |format|
       format.html {render :layout => 'support'}
     end

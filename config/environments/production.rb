@@ -9,12 +9,12 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
-  address: "smtp.1and1.com",
-  port: 587,
-  domain: "1and1.com,
+  address: "smtp.gmail.com",
+  port: 25, #587
+  domain: "gmail.com",
   authentication: "plain",
   enable_starttls_auto: true,
-  user_name: "callum@devonite.co.uk",
+  user_name: "devonitetest@gmail.com",
   password: ""
   }
 

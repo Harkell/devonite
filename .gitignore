@@ -14,3 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+
+# .env ## add this soon it protects env variables (JHS)
+# Procfile

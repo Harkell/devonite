@@ -4,7 +4,7 @@ gem 'devise'
 gem 'stripe'#, :git => 'https://github.com/stripe/stripe-ruby'
 
 gem 'mail_form' #For contact forms
-gem 'simple_form'
+#gem 'simple_form'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'

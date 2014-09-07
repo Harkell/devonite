@@ -9,6 +9,7 @@ class PanelController < ApplicationController
   end
 
   def requestchange
+    @contact = Contact.new
   end
 
   def statistics
