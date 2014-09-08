@@ -41,3 +41,4 @@ class HooksController < ApplicationController
       @subscription.save!
     end
   end
+end
