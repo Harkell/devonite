@@ -26,3 +26,4 @@ en:
       x_days:
         one: "1" #this is to remove the "days" bit in time_ago_in_words - instead of "1 days" it'll just say "1"
         other: "%{count}"
+ 

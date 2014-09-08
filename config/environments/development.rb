@@ -5,6 +5,30 @@ Rails.application.configure do
 
    config.action_mailer.default_url_options = { host: 'localhost:3000' }
 
+
+
+
+
+
+  # Mailer code (JHS)
+
+
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+  address: "auth.smtp.1and1.co.uk",   
+  port: 25, #587
+  domain: "1and1.co.uk",
+  authentication: "plain",
+  enable_starttls_auto: true,
+  user_name: "",
+  password: ""
+  }
+
+  config.action_mailer.perform_deliveries = true
+
+  #config.action_mailer.default :charset => "utf-8"
+
    
   # Settings specified here will take precedence over those in config/application.rb.
 

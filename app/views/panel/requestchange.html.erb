@@ -9,6 +9,23 @@
 
 <div class="narrow">
   <div class="pcontainer blue">
+  <div align="center">
+  <h3><%= "Send A message to Us Lol #{@website}" %></h3>
+
+  <%= form_for(@request) do |f| %>
+    <%= f.label "Company" %>
+    <%= f.select :name, options_for_select([@website]) %>
+    <%= f.label "Email" %>
+    <%= f.select :email, options_for_select([@current_user.email]) %>
+    <%= f.label "Message" %>
+    <%= f.text_area :message, :as => :text, :required => true %>
+    <%= f.text_field :nickname, :hint => 'Leave this field blank' %>
+    <div>
+      </br>
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>
   </div>
 </div>
 

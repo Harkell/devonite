@@ -1,12 +1,12 @@
-class ContactsController < ApplicationController
+class RequestsController < ApplicationController
   def new
-    @contact = Contact.new
+    @request = Contact.new
   end
 
   def create
-    @contact = Contact.new(params[:contact])
-    @contact.request = request
-    if @contact.deliver
+    @request = Request.new(params[:request])
+    @request.request = request
+    if @request.deliver
       redirect_to :back, notice: 'Thankyou for your message.  We will hit you up soon breh.'
     else
       redirect_to front_support_path, notice: 'Could not send message at this time.'
