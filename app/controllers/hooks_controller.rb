@@ -1,18 +1,18 @@
+Stripe.api_key = "sk_test_rW3V1vCWvRna6fLZHWWkQT5q"
 
 
 
 class HooksController < ApplicationController
   require 'json'
-
+  protect_from_forgery :except => [ :receiver ]
   #Stripe.api_key = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   #Stripe.api_key = Rails.configuration.stripe[:secret_key]
-  Stripe.api_key = "sk_test_rW3V1vCWvRna6fLZHWWkQT5q"
 
-  def receiver
+def receiver
 
-    data_json = JSON.parse request.body.read
+ #   data_json = JSON.parse request.body.read
 
-    p data_json['data']['object']['customer']
+  #  p data_json['data']['object']['customer']
 
 #    if data_json[:type] == "charge.succeeded"
 #      make_active(data_event)
@@ -24,9 +24,9 @@ class HooksController < ApplicationController
 #
 #    # Return a 200 status code
     #format.json { render json: final_obj, status: :ok }
-    format.json  { render :json, status: :ok }
+#    format.json  { render :json, status: :ok }
 #
-  end
+end
 
   # You need this line or you'll get CSRF/token errors from Rails (because this is a post)
   #skip_before_filter :verify_authenticity_token
