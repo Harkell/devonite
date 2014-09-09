@@ -2,7 +2,7 @@ class HooksController < ApplicationController
   require 'json'
 
   #Stripe.api_key = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  #Stripe.api_key = Rails.configuration.stripe[:secret_key]
+  Stripe.api_key = Rails.configuration.stripe[:secret_key]
   #Stripe::api_key = ENV['SECRET_KEY']
 
   def receiver
