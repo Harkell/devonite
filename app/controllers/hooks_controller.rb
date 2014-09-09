@@ -29,13 +29,13 @@ class HooksController < ApplicationController
 
 
 
-  def make_active(data_event)
-    @subscription = Subscription.first
-    if @subscription.subscribed == false
-      @subscription.subscribed = true
-      @subscription.save!
-    end
-  end
+#    def make_active(data_event)
+#      @subscription = Subscription.first
+#      if @subscription.subscribed == false
+#        @subscription.subscribed = true
+#       @subscription.save!
+#      end
+#  end
 
   #  def make_inactive(data_event)
   #    @profile = Profile.find(User.find_by_stripe_customer_token(data['data']['object']['customer']).profile)
@@ -45,11 +45,11 @@ class HooksController < ApplicationController
   #    end
   #   end
   # end
-  def make_inactive(data_event)
-    @subscription = Subscription.first
-    if @subscription.subscribed == true
-      @subscription.subscribed = false
-      @subscription.save!
-    end
-  end
+#  def make_inactive(data_event)
+#    @subscription = Subscription.first
+#    if @subscription.subscribed == true
+#      @subscription.subscribed = false
+#      @subscription.save!
+#    end
+#  end
 end
