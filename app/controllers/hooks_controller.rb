@@ -3,7 +3,7 @@ class HooksController < ApplicationController
 
   #Stripe.api_key = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   #Stripe.api_key = Rails.configuration.stripe[:secret_key]
-  Stripe.api_key = ENV['SECRET_KEY']
+  Stripe::api_key = "sk_test_rW3V1vCWvRna6fLZHWWkQT5q"
 
   def receiver
 
