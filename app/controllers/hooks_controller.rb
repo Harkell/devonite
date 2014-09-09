@@ -46,13 +46,13 @@ end
    # render nothing: true
   #end
 
-#    def make_active(data_event)
-#      @subscription = Subscription.first
-#      if @subscription.subscribed == false
-#        @subscription.subscribed = true
-#       @subscription.save!
-#      end
-#  end
+def make_active(data_event)
+  @subscription = Subscription.first
+    if @subscription.subscribed == false
+      @subscription.subscribed = true
+      @subscription.save!
+    end
+end
 
   #  def make_inactive(data_event)
   #    @profile = Profile.find(User.find_by_stripe_customer_token(data['data']['object']['customer']).profile)
