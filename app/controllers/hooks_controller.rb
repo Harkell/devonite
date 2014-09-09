@@ -6,7 +6,7 @@ class HooksController < ApplicationController
 
 def receiver
 
- #   data_json = JSON.parse request.body.read
+   data_json = JSON.parse request.body.read
 
   #  p data_json['data']['object']['customer']
 
