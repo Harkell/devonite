@@ -14,11 +14,11 @@ class HooksController < ApplicationController
 
     p data_json['data']['object']['customer']
 
-    if data_json[:type] == "customer.subscription.created"
+    if data_json[:type] == "charge.succeeded"
       make_active(data_event)
     end
 
-    if data_json[:type] == "customer.subscription.deleted"
+    if data_json[:type] == "charge.failed"
       make_inactive(data_event)
     end
 
