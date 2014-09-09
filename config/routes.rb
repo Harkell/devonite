@@ -29,7 +29,7 @@ Rails.application.routes.draw do
   resources "requests", only: [:new, :create]
 
 
-  scope '/hooks', :controller => :hooks_controller do
+  scope '/hooks', :controller => :hooks do
   post :receiver
 end
 
