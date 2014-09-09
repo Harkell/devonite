@@ -6,9 +6,9 @@ class HooksController < ApplicationController
 
 def receiver
 
-   data_json = JSON.parse request.body.read
+  data_json = JSON.parse request.body.read
 
-  #  p data_json['data']['object']['customer']
+  p data_json['data']['object']['customer']
 
 #    if data_json[:type] == "customer.subscription.created"
 #      make_active(data_event)
