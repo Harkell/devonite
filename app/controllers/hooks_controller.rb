@@ -2,7 +2,8 @@ class HooksController < ApplicationController
   require 'json'
 
   #Stripe.api_key = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  Stripe.api_key = Rails.configuration.stripe[:secret_key]
+  #Stripe.api_key = Rails.configuration.stripe[:secret_key]
+  Stripe::api_key = ENV['STRIPE_SECRET_KEY']
 
   def receiver
 
@@ -14,7 +15,7 @@ class HooksController < ApplicationController
       make_active(data_event)
     end
 
-    if data_json[:type] == "invoice.payment_failed"
+    if data_json[:type] == "customer.subscription.deleted"
       make_inactive(data_event)
     end
 
@@ -23,10 +24,23 @@ class HooksController < ApplicationController
 
   end
 
+
+
+    def receive
+
+    data_json = JSON.parse request.body.read
+
+    p data_json['data']['object']['customer']
+
+    if data_json[:type] == "customer.subscription.deleted"
+      cancel_subscription(data_event)
+    end
+
+
   def make_active(data_event)
     @subscription = Subscription.first
     if @subscription.subscribed == false
-      @profile.payment_received = true
+      @subscription.subscribed = true
       @subscription.save!
     end
   end
@@ -42,7 +56,7 @@ class HooksController < ApplicationController
   def make_inactive(data_event)
     @subscription = Subscription.first
     if @subscription.subscribed == true
-      @profile.payment_received = false
+      @subscription.subscribed = false
       @subscription.save!
     end
   end
