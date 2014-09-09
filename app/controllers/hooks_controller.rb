@@ -20,7 +20,7 @@ class HooksController < ApplicationController
     end
 
     # Return a 200 status code
-    #render :text => '{}', :status => :ok
+    format.json { render json: final_obj, status: :ok }
 
   end
 
