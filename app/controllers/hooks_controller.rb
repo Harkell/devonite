@@ -1,4 +1,4 @@
-Stripe.api_key = "sk_test_rW3V1vCWvRna6fLZHWWkQT5q"
+
 
 
 class HooksController < ApplicationController
@@ -6,28 +6,48 @@ class HooksController < ApplicationController
 
   #Stripe.api_key = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   #Stripe.api_key = Rails.configuration.stripe[:secret_key]
+  Stripe.api_key = "sk_test_rW3V1vCWvRna6fLZHWWkQT5q"
 
+#  def receiver
+#
+#    data_json = JSON.parse request.body.read
+#
+#    p data_json['data']['object']['customer']
+#
+#    if data_json[:type] == "charge.succeeded"
+#      make_active(data_event)
+#    end
+#
+#    if data_json[:type] == "charge.failed"
+#      make_inactive(data_event)
+#    end
+#
+#    # Return a 200 status code
+#    format.json { render json: final_obj, status: :ok }
+#
+#  end
+
+  # You need this line or you'll get CSRF/token errors from Rails (because this is a post)
+  skip_before_filter :verify_authenticity_token
 
   def receiver
+    # I like to save all my webhook events (just in case)
+    # and parse them in the background
+    # If you want to do that, do this
+    event = Event.new({raw_body: request.body.read})
+    event.save
+    # OR If you'd rather just parse and act 
+    # Do something like this
+    raw_body = request.body.read
+    json = JSON.parse raw_body
+    event_type = json['type'] # You most likely need the event type
+    customer_id = json['data']['object']['customer'] # Customer ID is the other main bit of info you need
 
-    data_json = JSON.parse request.body.read
+    # Do the rest of your business here
 
-    p data_json['data']['object']['customer']
-
-    if data_json[:type] == "charge.succeeded"
-      make_active(data_event)
-    end
-
-    if data_json[:type] == "charge.failed"
-      make_inactive(data_event)
-    end
-
-    # Return a 200 status code
-    format.json { render json: final_obj, status: :ok }
-
+    # Stripe just needs a 200/ok in return
+    render nothing: true
   end
-
-
 
 #    def make_active(data_event)
 #      @subscription = Subscription.first
