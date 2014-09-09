@@ -2,6 +2,7 @@ class HooksController < ApplicationController
   require 'json'
 
   #Stripe.api_key = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  Stripe.api_key = Rails.configuration.stripe[:secret_key]
 
   def receiver
 
@@ -9,13 +10,17 @@ class HooksController < ApplicationController
 
     p data_json['data']['object']['customer']
 
-    if data_json[:type] == "invoice.payment_succeeded"
+    if data_json[:type] == "customer.subscription.created"
       make_active(data_event)
     end
 
     if data_json[:type] == "invoice.payment_failed"
       make_inactive(data_event)
     end
+
+    # Return a 200 status code
+    render :text => '{}', :status => :ok
+
   end
 
   def make_active(data_event)
