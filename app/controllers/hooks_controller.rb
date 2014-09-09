@@ -2,8 +2,8 @@ class HooksController < ApplicationController
   require 'json'
 
   #Stripe.api_key = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  Stripe.api_key = Rails.configuration.stripe[:secret_key]
-  #Stripe::api_key = ENV['SECRET_KEY']
+  #Stripe.api_key = Rails.configuration.stripe[:secret_key]
+  Stripe.api_key = ENV['SECRET_KEY']
 
   def receiver
 
@@ -24,17 +24,6 @@ class HooksController < ApplicationController
 
   end
 
-
-
-    def receive
-
-    data_json = JSON.parse request.body.read
-
-    p data_json['data']['object']['customer']
-
-    if data_json[:type] == "customer.subscription.deleted"
-      cancel_subscription(data_event)
-    end
 
 
   def make_active(data_event)
