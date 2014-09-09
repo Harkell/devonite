@@ -1,7 +1,3 @@
-Stripe.api_key = "sk_test_rW3V1vCWvRna6fLZHWWkQT5q"
-
-
-
 class HooksController < ApplicationController
   require 'json'
   protect_from_forgery :except => [ :receiver ]
