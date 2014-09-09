@@ -10,9 +10,9 @@ def receiver
 
   p data_json['data']['object']['customer']
 
- # if data_json[:type] == "customer.subscription.created"
- #   make_active(data_event)
- # end
+  if data_json[:type] == "customer.subscription.created"
+    make_active(data_event)
+  end
 #
 #   if data_json[:type] == "charge.failed"
 #      make_inactive(data_event)

@@ -9,7 +9,7 @@ def create
   #@amount = 5000
 
   customer = Stripe::Customer.create(
-    :customer    => customer.id,
+   # :customer    => customer.id,
     :email => 'example@devonite.co.uk',    # params[:email], #not sure what email does
     :card  => params[:stripeToken],
     :plan  => 'dvnt-test'
