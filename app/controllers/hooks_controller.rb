@@ -49,8 +49,9 @@ end
 def make_active
   @subscription = Subscription.first
   if @subscription.subscribed == false
-    @subscription.subscribed = true
-    @subscription.save!
+   # @subscription.subscribed = true
+    @subscription.update(:subscribed => true)
+   # @subscription.save!
   end
 end
 
