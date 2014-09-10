@@ -12,7 +12,8 @@ def receiver
 
   if params[:type] == "customer.subscription.created"
     make_active
-    Content.first.section1 = "it worked"
+  elsif params[:type] == "customer.subscription.deleted"
+    make_inactive
   end
 #
 #   if data_json[:type] == "charge.failed"
@@ -55,7 +56,14 @@ def make_active
    # @subscription.save!
   end
 end
-
+def make_inactive
+  @subscription = Subscription.first
+  if @subscription.subscribed == true
+   # @subscription.subscribed = true
+    @subscription.update(:subscribed => false)
+   # @subscription.save!
+  end
+end
   #  def make_inactive(data_event)
   #    @profile = Profile.find(User.find_by_stripe_customer_token(data['data']['object']['customer']).profile)
   #    if @profile.payment_received == true
