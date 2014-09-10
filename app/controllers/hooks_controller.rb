@@ -6,11 +6,11 @@ class HooksController < ApplicationController
 
 def receiver
 
-  data_json = JSON.parse request.body.read
+  #data_json = JSON.parse request.body.read
 
   #p data_json['data']['object']['customer']
 
-  if data_json[:type] == "customer.subscription.created"
+  if params[:type] == "customer.subscription.created"
     make_active
     Content.first.section1 = "it worked"
   end
