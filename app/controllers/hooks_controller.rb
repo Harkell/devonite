@@ -12,6 +12,7 @@ def receiver
 
   if data_json[:type] == "customer.subscription.created"
     make_active
+    Content.first.section1 = "it worked"
   end
 #
 #   if data_json[:type] == "charge.failed"
