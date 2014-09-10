@@ -1,4 +1,4 @@
-class Contact < MailForm::Base # try ActionMailer::Base?
+class Request < MailForm::Base # try ActionMailer::Base?
   attribute :name,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :message
@@ -8,7 +8,7 @@ class Contact < MailForm::Base # try ActionMailer::Base?
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "Devonite Contact Form", #%(#{inbox})
+      :subject => "Devonite Request Form", #%(#{inbox})
       :to => "comely@hotmail.co.uk",
       :from => %("#{name}" <#{email}>)
     }

@@ -1,15 +1,17 @@
 class PanelController < ApplicationController
 	layout 'panel'
+  before_action :website_config, only: [:requestchange]
+
 
   def pageedit
     @content = Content.find(1)
-    #@content2 = Content.find(2)
-
-  
+    #@content2 = Content.find(2)  
   end
 
   def requestchange
-    @contact = Contact.new
+    @request = Request.new
+    @userEmail = current_user.email
+    #@contact.inbox = "comely@hotmail.co.uk"
   end
 
   def statistics
