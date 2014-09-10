@@ -1,3 +1,41 @@
+<div class="section1">
+  <div class="navrow">
+    <div class="large-2 columns left">
+      <%= image_tag("logo.png", class: "margin2v padding12h") %>
+    </div>
+    <div class="large-9 columns">
+      <ul class="inline-list nav blue margin26t right">
+        <li><%= link_to(root_path) do %>HOME<% end %></li>
+        <li>     |     </li>
+        <li><%= link_to(front_howitworks_path) do %>HOW IT WORKS<% end %></li>
+        <li>     |     </li>
+        <li><%= link_to(front_blog_path) do %>BLOG<% end %></li>
+        <li>     |     </li>
+        <li><%= link_to(front_support_path) do %>SUPPORT<% end %>
+        </li>
+      </ul>
+    </div>
+    <div class="large-1 columns">
+      <a href="http://www.twitter.com/devoniteuk" target="_blank"><div class="loginbutton"><%= image_tag("twitterbird.png", class: "") %><span class="margin01t"></span></div></a>
+    </div>
+  </div> 
+
+  <div class="narrow">
+    <div class="large-12 columns content">
+      <% if flash[:notice] %>
+        <div data-alert class="alert-box success radius content">
+          <%= notice %>
+          <a href="" class="close">&times;</a>
+        </div>
+      <% end %>
+      <% if flash[:alert] %>
+        <div data-alert class="alert-box alert radius content">
+            <%= alert %>
+          <a href="" class="close">&times;</a>
+        </div>
+      <% end %>
+    </div>
+  </div>
 
   <div class="margin7t">
     <div class="row">
@@ -8,61 +46,54 @@
       </div>
     </div>
   </div>
+</div>
 
+<div class="gbreak">
+</div>
+
+<div class="section2 gcontainer">
+  <div class="narrow">
+    <div class="large-6 columns text-left content">
+      <div class="margin4v">
+        <h3>Devons best website solution</h3>
+        <p class="thin">Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative, streamlined functionality you'd get from a leading website builder. Giving Devon businesses the best of both worlds.</p>
+        <h3>Devons best website solution</h3>
+        <p class="thin">Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative, streamlined functionality you'd get from a leading website builder. Giving Devon businesses the best of both worlds.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section3 bcontainer">
+  <div class="narrow">
+    <div class="large-12 columns text-center content">
+      <h3 class="margin2t"><%== @content.section3 %></h3>
+    </div>
+  </div>
+  <div class="narrower">
+    <div class="large-12 columns text-center content">
+      <p class="margin2b thin"><%== @content.section4 %></p>
+    </div>
+  </div>
+  <div class="row dboverlay text-center">
+    <div class="large-4 columns">
+      <br>
+    </div>
+    <div class="large-4 columns content">
+      <h1 class="margin5t blogdate content dbheaderborder">CONTROL</h1>
+      <h6 class="margin1t">Our panel gives you the power to edit content, post articles and keep track of your success effortlessly.</h6>
+      <a href="<%= front_howitworks_path%>" class="wbutton margin2t"><span class="margin01t black">FIND OUT HOW IT WORKS</span></a>
+    </div>
+    <div class="large-4 columns">
+      <br>
+    </div>
+  </div>
   <div class="row">
-    <div class="large-12 columns">
-      <%= image_tag "mountains.png" %>
+    <div class="large-12 columns text-center">
+      <%= image_tag("dashboard.png", class: "margin2t") %>
     </div>
   </div>
-
-  <div class="lgcontainer">
-    <div class="row">
-      <div class"large-12 columns">
-        <br><br>
-      </div>
-    </div>
-  </div>
-
-  <div class="gcontainer">
-    <div class="narrow">
-      <div class="large-6 columns text-left content">
-        <div class="margin4v">
-          <h3>Devons best website solution</h3>
-          <p class="thin">Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative, streamlined functionality you'd get from a leading website builder. Giving Devon businesses the best of both worlds.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bcontainer">
-    <div class="narrow">
-      <div class="large-12 columns text-center content">
-        <h3 class="margin2t"><%== @content.section3 %></h3>
-      </div>
-    </div>
-    <div class="narrower">
-      <div class="large-12 columns text-center content">
-        <p class="margin2b thin"><%== @content.section4 %></p>
-      </div>
-    </div>
-    <div class="row dboverlay text-center">
-      <div class="large-4 columns">
-        <br>
-      </div>
-      <div class="large-4 columns content">
-        <h1 class="margin5t blogdate content dbheaderborder">CONTROL</h1>
-        <h6 class="margin1t">Our panel gives you the power to edit content, post articles and keep track of your success effortlessly.</h6>
-        <a href="<%= front_howitworks_path%>" class="wbutton margin2t"><span class="margin01t black">FIND OUT HOW IT WORKS</span></a>
-      </div>
-      <div class="large-4 columns">
-        <br>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns text-center">
-        <%= image_tag("dashboard.png", class: "margin2t") %>
-      </div>
-    </div>
-  </div>
+</div>
 
   <div class="grcontainer">
     <div class="row">
@@ -88,6 +119,5 @@
               loopCount: false,
             });
         });
-      </script>
       </script>
 <%= render "layouts/footer" %>

@@ -9,25 +9,27 @@
 
 <div class="narrow">
   <div class="pcontainer blue">
-  <div align="center">
-  <h3>Send A message to Us Lol</h3>
-
-  <%= form_for(@contact) do |f| %>
-    <%= f.label "Name" %>
-    <%= f.text_field :name, :required => true %>
-    <%= f.label "Email" %>
-    <%= f.text_field :email, :required => true %>
-    <%= f.label "Message" %>
-    <%= f.text_area :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.text_field :nickname, :hint => 'Leave this field blank' %>
+    <div class="row lineheight0">
+      <div class="large-12 columns content">
+        <div class="margin2t">
+          <%= form_for(@contact) do |f| %>
+            <%= f.label "Name" %>
+            <%= f.text_field :name, :required => true %>
+            <%= f.label "Email" %>
+            <%= f.text_field :email, :required => true %>
+            <%= f.label "Message" %>
+            <%= f.text_area :message, :as => :text, :required => true %>
+            <div class= "hidden">
+              <%= f.text_field :nickname, :hint => 'Leave this field blank' %>
+            </div>
+            <div>
+              </br>
+              <%= f.submit %>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-    <div>
-      </br>
-      <%= f.submit %>
-    </div>
-  <% end %>
-</div>
   </div>
 </div>
 
