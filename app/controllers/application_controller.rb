@@ -3,9 +3,13 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-def website
-	@website = "Devonite"
-end
+  def website_config
+  	@website = "Devonite" # For request change field auto-fill
+	@stripeEmail
+	@stripePlan			  # Stripe subscription name link up with charges controller
+  end
 
+  # Contact form emails can be configured at contact.rb and request.rb models
+  
 
 end

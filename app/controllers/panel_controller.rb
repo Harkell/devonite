@@ -1,13 +1,11 @@
 class PanelController < ApplicationController
 	layout 'panel'
-  before_action :website, only: [:requestchange]
+  before_action :website_config, only: [:requestchange]
 
 
   def pageedit
     @content = Content.find(1)
-    #@content2 = Content.find(2)
-
-  
+    #@content2 = Content.find(2)  
   end
 
   def requestchange
