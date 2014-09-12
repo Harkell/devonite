@@ -606,6 +606,10 @@ input[type="submit"] {
   background: #749164;
 }
 
+.brcontainer{
+  background: #99846D;
+}
+
 .lgcontainer2{
   background: #454545;
 }
@@ -624,6 +628,10 @@ input[type="submit"] {
 
 .bcontainer{
   background: #3e596b;
+}
+
+.lbcontainer{
+  background: #446378;
 }
 
 .grcontainer{
@@ -665,6 +673,13 @@ input[type="submit"] {
 
 .seamountain{
   background: url('seamountain.png');
+  background-position: center bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.underwater{
+  background: url('underwater.png');
   background-position: center bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -2933,9 +2948,10 @@ input[type="url"],
 textarea {
   webkit-appearance: none;
   -webkit-border-radius: 0px;
-  background-color: white;
+  background-color: #ececec;
   font-family: inherit;
   border: 1px solid #cccccc;
+  border-radius: 3px;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.75);
   display: block;
@@ -3092,11 +3108,12 @@ input[type="file"] {
 /* We add basic fieldset styling */
 fieldset {
   border: 1px solid #dddddd;
+  border-radius: 3px;
   padding: 1.25rem;
   margin: 1.125rem 0; }
   fieldset legend {
     font-weight: bold;
-    background: white;
+    background: #ececec;
     padding: 0 0.1875rem;
     margin: 0;
     margin-left: -0.1875rem; }
