@@ -12,16 +12,14 @@
     <div class="row lineheight0">
       <div class="large-12 columns content">
         <div class="margin2t">
-          <%= form_for(@contact) do |f| %>
-            <%= f.label "Name" %>
-            <%= f.text_field :name, :required => true %>
+          <%= form_for(@request) do |f| %>
+            <%= f.label "Company" %>
+            <%= f.select :name, options_for_select([@website]) %>
             <%= f.label "Email" %>
-            <%= f.text_field :email, :required => true %>
+            <%= f.select :email, options_for_select([@current_user.email]) %>
             <%= f.label "Message" %>
             <%= f.text_area :message, :as => :text, :required => true %>
-            <div class= "hidden">
-              <%= f.text_field :nickname, :hint => 'Leave this field blank' %>
-            </div>
+            <%= f.text_field :nickname, :hint => 'Leave this field blank' %>
             <div>
               </br>
               <%= f.submit %>
@@ -31,19 +29,6 @@
       </div>
   <div align="center">
   <h3><%= "Send A message to Us Lol #{@website}" %></h3>
-
-  <%= form_for(@request) do |f| %>
-    <%= f.label "Company" %>
-    <%= f.select :name, options_for_select([@website]) %>
-    <%= f.label "Email" %>
-    <%= f.select :email, options_for_select([@current_user.email]) %>
-    <%= f.label "Message" %>
-    <%= f.text_area :message, :as => :text, :required => true %>
-    <%= f.text_field :nickname, :hint => 'Leave this field blank' %>
-    <div>
-      </br>
-      <%= f.submit %>
-    </div>
   </div>
 </div>
 

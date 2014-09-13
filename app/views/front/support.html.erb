@@ -1,42 +1,58 @@
+<div class="lbcontainer">
+<div class="lbcontainer underwater">
+	<div class="narrow">
+		<div class="large-6 columns content">
+      <div class="margin5v">
+        <%= form_for(@contact) do |f| %>
+        <%= f.text_field :name, :required => true %>
+        <%= f.text_area :message, :as => :text, :required => true %>
+        <div class="row">
+        	<div class="large-3 columns">
+	          </br>
+	          <%= f.submit %>
+	        </div>
+	        <div class="large-9 columns text-center">
+  	        <p class="margin15t">(Our average response time is 60 minutes)</p>
+  	      </div>
+        </div>
+        <% end %>
+      </div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="bcontainer">
+	<div class="margin4v">
+		<div class="narrow">
+			<div class="large-8 columns content">
+				<h3 class="margin2b content faq lbcontainer">FAQ</h3>
+				<p class="font09 content faq lbcontainer"><b>QUESTION </b>Our average response time is 60 minutes<br>
+				   <b>ANSWER </b>Our average response time is 60 minutes</p>
+				<p class="font09 content faq lbcontainer"><b>QUESTION </b>Our average response time is 60 minutes<br>
+				   <b>ANSWER </b>Our average response time is 60 minutes</p>
+				<p class="font09 content faq lbcontainer"><b>QUESTION </b>Our average response time is 60 minutes<br>
+				   <b>ANSWER </b>Our average response time is 60 minutes</p>
+				<p class="font09 content faq lbcontainer"><b>QUESTION </b>Our average response time is 60 minutes<br>
+				   <b>ANSWER </b>Our average response time is 60 minutes</p>
+			</div>
+			<div class="large-4 columnscontent">
+				<div class="lbcontainer content faq lbcontainer"><h3>Trending</h3><br><br><br><br><br><br><br><br><Br><br><br><br><br><br><br><br><br><br><br><br><br><br><Br><br><br><br><br><br><br><br><br><br><br><br><br><br><Br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="lgcontainer">
-	<div class="row">
+	<div class="narrow">
 		<div class="large-12 columns">
-			<%= image_tag("volcanomountain.png", class: "margin10t") %>
-		</div>
-	</div>
-</div>
-<div align="center">
-  <h3>Send A message to Us Lol</h3>
-
-  <%= form_for(@contact) do |f| %>
-    <%= f.label "Name" %>
-    <%= f.text_field :name, :required => true %>
-    <%= f.label "Email" %>
-    <%= f.text_field :email, :required => true %>
-    <%= f.label "Message" %>
-    <%= f.text_area :message, :as => :text, :required => true %>
-    <div class= "hidden">
-      <%= f.text_field :nickname, :hint => 'Leave this field blank' %>
-    </div>
-    <div>
-      </br>
-      <%= f.submit %>
-    </div>
-  <% end %>
-</div>
-<div class="lgcontainer3">
-	<div class="narrower">
-		<div class="large-12 columns">
-			<br><br>
+			<div class="margin4v">
+				<h3 class="margin1b">Prefer to contact us directly?</h3>
+				<h5><b>MOBILE <h4>07906 574103</h4></b></h5>
+				<h5><b>EMAIL <h4>support@devonite.co.uk</h4></b></h5>
+			</div>
 		</div>
 	</div>
 </div>
 
-<div class="grcontainer">
-	<div class="narrower">
-		<div class="large-12 columns">
-			<br><br><br><Br>
-		</div>
-	</div>
-</div>
 <%= render "layouts/footer" %>
