@@ -464,6 +464,10 @@ input[type="submit"] {
   margin-bottom: 2em;
 }
 
+.vmargin22t{
+  margin-top: 22vh;
+}
+
 .margin8t11b{
   margin-top: 8em;
   margin-bottom: 11em;

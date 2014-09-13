@@ -31,7 +31,7 @@ Rails.application.routes.draw do
 
   scope '/hooks', :controller => :hooks do
   post :receiver
-end
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
