@@ -443,6 +443,12 @@ input[type="submit"] {
   transition: background-color 300ms ease-out;
 }
 
+.header1align{
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+}
+
 .lineheight0{
   line-height: 0;
 }
