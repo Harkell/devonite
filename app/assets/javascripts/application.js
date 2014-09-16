@@ -14,5 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require typed
+//= require foundation
+//= require foundation.tab
 //= require_tree .
 
