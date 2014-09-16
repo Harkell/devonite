@@ -29,6 +29,8 @@ Rails.application.configure do
 
   config.action_mailer.default :charset => "utf-8"
 
+  config.assets.precompile += %w( typed.js )
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
