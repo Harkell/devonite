@@ -3,10 +3,12 @@ class HooksController < ApplicationController
   protect_from_forgery :except => [ :receiver ]
 
   def receiver
-    if params[:type] == "customer.subscription.created"  # need to verify subscription matches site specific plan
-      make_active
-    elsif params[:type] == "customer.subscription.deleted"
-      make_inactive
+    if params[:data][:object][:lines][:data][:plan][:id] == "dvnt-test" # checks for site-specific webhooks
+      if params[:type] == "customer.subscription.created"  # need to verify subscription matches site specific plan
+        make_active
+      elsif params[:type] == "customer.subscription.deleted"
+        make_inactive
+      end
     end
   end
 

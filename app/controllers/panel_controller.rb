@@ -1,6 +1,7 @@
 class PanelController < ApplicationController
 	layout 'panel'
   before_action :website_config, only: [:requestchange]
+  before_action :redirect_unsubscribed, only: [:pageedit, :requestchange, :statistics, :blog]
 
 
   def pageedit
@@ -23,6 +24,14 @@ class PanelController < ApplicationController
   def blog
     @blog = Blogpost.new
     @blogPosts = Blogpost.all.reverse
+  end
+
+  private
+
+  def redirect_unsubscribed
+    if Subscription.first.subscribed == false
+      redirect_to subscription_path
+    end
   end
 
 end

@@ -22,6 +22,8 @@ Rails.application.routes.draw do
 
   get 'front/support'
 
+  match '/subscription', to: 'charges#prompt', via: 'get'
+
   match '/contacts',     to: 'contacts#new',   via: 'get'
 
   resources "contacts", only: [:new, :create]

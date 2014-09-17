@@ -8,7 +8,7 @@ class ChargesController < ApplicationController
   def create
   customer = Stripe::Customer.create(
    # :customer    => customer.id,
-    :email => 'example@devonite.co.uk',    # params[:email], #not sure what email does
+    :email => 'example@devonite.co.uk',    # params[:email]
     :card  => params[:stripeToken],
     :plan  => 'dvnt-test'
   )
@@ -24,6 +24,9 @@ class ChargesController < ApplicationController
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to charges_path
+  end
+
+  def prompt
   end
 
 end

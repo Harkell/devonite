@@ -4,12 +4,12 @@
 		<div class="large-6 columns content">
       <div class="margin5v">
         <%= form_for(@contact) do |f| %>
-        <%= f.text_field :name, :required => true %>
-        <%= f.text_area :message, :as => :text, :required => true %>
+        <%= f.text_field :email, :required => true, :placeholder => "Email" %>
+        <%= f.text_area :message, :as => :text, :required => true, :placeholder => "Message" %>
         <div class="row">
         	<div class="large-3 columns">
 	          </br>
-	          <%= f.submit %>
+	          <%= f.submit "Send" %>
 	        </div>
 	        <div class="large-9 columns text-center">
   	        <p class="margin15t">(Our average response time is 60 minutes)</p>
