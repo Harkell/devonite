@@ -9,7 +9,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="">
+<body class="blue">
 
 
 <div class="narrower">
@@ -21,7 +21,7 @@
     <div class="chargesplitborder">
     </div>
     <% if user_signed_in? %>
-      <div class="margin2v"><%= yield %></div>
+      <div class="margin2v content"><%= yield %></div>
     <% else %>
     <div class="row">
       <div class="large-12 columns text-center">

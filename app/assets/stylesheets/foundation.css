@@ -738,6 +738,15 @@ input[type="submit"] {
     float: none;
 }
 
+.planetbox{
+  background: url('planetbg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  border-radius: 3px;
+  border: 1px solid #456479;
+}
+
 
 
 

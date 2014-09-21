@@ -4,10 +4,12 @@ For rails:
 - Stripe webhooks testing (including redirect after payment)
 - Dashboard stats implementation
 - Refining of blog
+- Implement paperclip (image attachment extension)
+- Add FAQ post integration?
 
 For design:
 
-- Charges pages styling
+[DONE] - Charges pages styling
 - Add 'Coming soon' text in video placeholder image
 - Resize the word 'Support' on support page logo
 
