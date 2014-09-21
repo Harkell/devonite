@@ -443,6 +443,48 @@ input[type="submit"] {
   transition: background-color 300ms ease-out;
 }
 
+.planetbutton{
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: normal;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.5em;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #3e596b;
+  border-color: #000;
+  color: inherit;
+  transition: background-color 300ms ease-out;
+}
+
+.planetbutton:hover{
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: normal;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.5em;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #3e596b;
+  border-color: #000;
+  color: inherit;
+  transition: background-color 300ms ease-out;
+}
+
 .header1align{
   position: relative;
   top: 30%;
@@ -465,6 +507,11 @@ input[type="submit"] {
 .padding4t3b{
   padding-top: 4em;
   padding-bottom: 3em;
+}
+
+.padding4t4b{
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .content{
@@ -737,6 +784,7 @@ input[type="submit"] {
 .valign-middle [class*="column"] + [class*="column"]:last-child {
     float: none;
 }
+
 
 .planetbox{
   background: url('planetbg.png');

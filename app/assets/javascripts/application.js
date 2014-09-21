@@ -16,5 +16,6 @@
 //= require typed
 //= require foundation
 //= require foundation.tab
+//= require foundation.equalizer
 //= require_tree .
 
