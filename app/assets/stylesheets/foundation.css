@@ -8,6 +8,10 @@
   display: none;
 }
 
+.mobilesection1{
+  display: none;
+}
+
 
 @media (max-width: 63.89em) {
   .frontheader {
@@ -20,6 +24,12 @@
     display: inline;
   }
   .desktoppreviewbox{
+    display: none;
+  }
+  .mobilesection1{
+    display: inline;
+  }
+  .desktopsection1{
     display: none;
   }
 }
