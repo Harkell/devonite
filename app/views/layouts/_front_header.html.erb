@@ -1,4 +1,4 @@
-  <div class="navrow">
+  <div class="frontheader navrow">
     <div class="large-2 columns left">
       <%= image_tag("logo.png", class: "margin2v padding12h") %>
     </div>
@@ -16,6 +16,25 @@
     </div>
     <div class="large-1 columns">
       <a href="http://www.twitter.com/devoniteuk" target="_blank"><div class="loginbutton"><%= image_tag("twitterbird.png", class: "") %><span class="margin01t"></span></div></a>
+    </div>
+  </div> 
+
+  <div class="mobilefrontheader row content">
+    <div class="row">
+      <div class="small-12 columns text-center">
+        <%= image_tag("logo.png", class: "margin1t") %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns text-center content">
+        <ul class="no-bullet nav blue margin26t">
+          <%= link_to(root_path) do %><li class="mobilenav">HOME</li><% end %><br>
+          <%= link_to(front_howitworks_path) do %><li class="mobilenav">HOW IT WORKS</li><% end %><br>
+          <%= link_to(front_blog_path) do %><li class="mobilenav">BLOG</li><% end %><br>
+          <%= link_to(front_support_path) do %><li class="mobilenav">SUPPORT
+          </li><% end %>
+        </ul>
+      </div>
     </div>
   </div> 
 

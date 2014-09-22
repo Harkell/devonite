@@ -1,3 +1,83 @@
+/* MOBILEEEEEEEEE START */
+
+.mobilefrontheader{
+  display: none;
+}
+
+.mobilepreviewbox{
+  display: none;
+}
+
+
+@media (max-width: 63.89em) {
+  .frontheader {
+    display: none;
+  }
+  .mobilefrontheader{
+    display: inline;
+  }
+  .mobilepreviewbox{
+    display: inline;
+  }
+  .desktoppreviewbox{
+    display: none;
+  }
+}
+
+
+.mobilenav{
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.5em;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.7rem;
+  background-color: #749164;
+  border-color: #2285a2;
+  color: white;
+  transition: background-color 300ms ease-out;
+  width: 100%;
+  margin: 0.2em 0;
+}
+
+.mobilenav:hover{
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.5em;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.7rem;
+  background-color: #6b8b64;
+  border-color: #2285a2;
+  color: white;
+  transition: background-color 300ms ease-out;
+  width: 100%;
+  margin: 0.2em 0;
+}
+
+
+
+/* MOBILEEEEEEEEE END */
+
+
+
+
+
+
+
+
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -644,6 +724,11 @@ input[type="submit"] {
 
 .margin2t{
   margin-top: 2em;
+}
+
+.margin017b03r{
+  margin-bottom: 0.17em;
+  margin-right: 0.3em;
 }
 
 .vmargin14t{
