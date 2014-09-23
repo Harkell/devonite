@@ -1,3 +1,140 @@
+/* ANIMATIONS START */
+
+@-webkit-keyframes mountainfade { 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes section1headersfade { 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-moz-keyframes section1headersfade { 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-ms-keyframes section1headersfade { 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-o-keyframes section1headersfade { 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes section1headersfadee { 
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes headerfade { 
+  0%{
+    opacity: 0;
+    transform: translate(0em,-1em);
+  }
+  70%{
+    opacity: 0.5;
+    transform: translate(0em, 0em);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-moz-keyframes headerfade { 
+  0%{
+    opacity: 0;
+    transform: translate(0em,-1em);
+  }
+  70%{
+    opacity: 0.5;
+    transform: translate(0em, 0em);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-ms-keyframes headerfade { 
+  0%{
+    opacity: 0;
+    transform: translate(0em,-1em);
+  }
+  70%{
+    opacity: 0.5;
+    transform: translate(0em, 0em);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-o-keyframes headerfade { 
+  0%{
+    opacity: 0;
+    transform: translate(0em,-1em);
+  }
+  70%{
+    opacity: 0.5;
+    transform: translate(0em, 0em);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes headerfade { 
+  0%{
+    opacity: 0;
+    transform: translate(0em,-1em);
+  }
+  70%{
+    opacity: 0.5;
+    transform: translate(0em, 0em);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.logo{
+  -webkit-animation: headerfade 0.7s 0s 1 linear alternate;
+  -moz-animation: headerfade 0.7s 0s 1 linear alternate;
+  -ms-animation: headerfade 0.7s 0s 1 linear alternate;
+  -o-animation: headerfade 0.7s 0s 1 linear alternate;
+  animation: headerfade 0.7s 0s 1 linear alternate;
+}
+
+.section1headers{
+  -webkit-animation: section1headersfade 0.5s 0s 1 linear alternate;
+  -moz-animation: section1headersfade 2s 0s 1 linear alternate;
+  -ms-animation: section1headersfade 2s 0s 1 linear alternate;
+  -o-animation: section1headersfade 2s 0s 1 linear alternate;
+  animation: section1headersfade 2s 0s 1 linear alternate;
+}
+
+/* ANIMATIONS END */
+
 /* MOBILEEEEEEEEE START */
 
 .mobilefrontheader{
