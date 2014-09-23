@@ -12,6 +12,17 @@
   display: none;
 }
 
+.mobilesection1bg{
+  background: url("http://i.imgur.com/tL9HlKu.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mobilegbreak{
+  display: none;
+}
+
 
 @media (max-width: 63.89em) {
   .frontheader {
@@ -32,6 +43,57 @@
   .desktopsection1{
     display: none;
   }
+  .gbreak{
+    display: none;
+  }
+  .mobilegbreak{
+    display: inline;
+  }
+  .planetbox{
+    margin-top: 3em;
+  }
+}
+
+.mobilenavwhite{
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.5em;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.7rem;
+  background-color: #fff;
+  border-color: #2285a2;
+  color: #000;
+  transition: background-color 300ms ease-out;
+  width: 100%;
+  margin: 0.2em 0;
+}
+
+.mobilenavwhite:hover{
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.5em;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.7rem;
+  background-color: #ececec;
+  border-color: #2285a2;
+  color: #000;
+  transition: background-color 300ms ease-out;
+  width: 100%;
+  margin: 0.2em 0;
 }
 
 
@@ -75,6 +137,52 @@
   transition: background-color 300ms ease-out;
   width: 100%;
   margin: 0.2em 0;
+}
+
+.mobilevideobutton{
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.5em;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  font-size: 0.7rem;
+  background-color: #749164;
+  border-color: #2285a2;
+  color: white;
+  transition: background-color 300ms ease-out;
+}
+
+.mobilevideobutton:hover{
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0.5em;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  font-size: 0.7rem;
+  background-color: #6b8b64;
+  border-color: #2285a2;
+  color: white;
+  transition: background-color 300ms ease-out;
 }
 
 
