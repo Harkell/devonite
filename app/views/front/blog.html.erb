@@ -84,11 +84,11 @@
 
 <% @blogPosts.each do |post| %>
   <div class="narrow padding2v">
-  	<div class="large-12 columns text-left content">
+  	<div class="large-9 columns text-left content">
   		<h4 class="sanchez"><b><%= post.created_at.to_date.day %>
   			<%= Date::ABBR_MONTHNAMES[post.created_at.to_date.month] %></b></h4>
       <h1 class="blogheader"><b><%= link_to post.title, blogpost_path(post) %></b></h1>
-      <p class="padding20r"><%= truncate(post.content, :length => 200, :separator => ' ') %></p>
+      <p><%= truncate(post.content, :length => 200, :separator => ' ') %></p>
     </div>
   </div>
 <% end %>
