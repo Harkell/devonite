@@ -18,4 +18,5 @@
 //= require foundation.tab
 //= require foundation.equalizer
 //= require_tree .
+//= require responsiveslides.min
 

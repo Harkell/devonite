@@ -30,7 +30,12 @@
     <div class="narrow">
       <div class="large-12 columns text-center">
         <%= image_tag("browserbar.png") %>
-        <%= image_tag("dashboard2.png") %>
+        <ul class="rslides">
+          <li><img src="http://i.imgur.com/7ULGntJ.png"></li>
+          <li><img src="http://i.imgur.com/S2oAjrD.png"></li>
+          <li><img src="http://i.imgur.com/oWDCBDS.png"></li>
+          <li><img src="http://i.imgur.com/dvypnFG.png"></li>
+        </ul>
       </div>
     </div>
     </div>
@@ -68,3 +73,12 @@
     </div>
   </div>
 <%= render "layouts/footer" %>
+
+<script>
+  $(function() {
+    $(".rslides").responsiveSlides({
+      speed: 1,
+      timeout: 7000,
+    });
+  });
+        </script>
