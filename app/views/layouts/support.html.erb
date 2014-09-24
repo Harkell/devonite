@@ -13,10 +13,10 @@
 
 
   <div class="frontheader navrow">
-    <div class="large-2 columns left">
-      <%= image_tag("footerlogo.png", class: "margin2v padding12h") %>
+    <div class="large-3 columns left">
+      <%= image_tag("supportlogo.png", class: "supportlogo margin2v padding12h") %>
     </div>
-    <div class="large-9 columns">
+    <div class="large-8 columns">
       <ul class="inline-list nav white margin26t right">
         <li><%= link_to(root_path) do %>HOME<% end %></li>
         <li>     |     </li>
@@ -36,7 +36,7 @@
   <div class="mobilefrontheader row content">
     <div class="row">
       <div class="small-12 columns text-center">
-        <%= image_tag("footerlogo.png", class: "margin1t") %>
+        <%= image_tag("supportlogo.png", class: "supportlogo margin1t") %>
       </div>
     </div>
     <div class="row">
@@ -79,11 +79,11 @@
       <div class="large-12 columns text-center">
         <% if user_signed_in? %>
           <%= link_to(panel_statistics_path) do %>
-            <%= image_tag("footerlogo.png", class: "margin2v") %>
+            <%= image_tag("footerlogo.png", class: "logo margin2v") %>
           <% end %>
           <% else %>
             <%= link_to(new_user_session_path) do %>
-              <%= image_tag("footerlogo.png", class: "margin2v") %>
+              <%= image_tag("footerlogo.png", class: "logo margin2v") %>
             <% end %>
         <% end %>
       </div>

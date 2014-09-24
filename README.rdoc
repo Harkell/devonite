@@ -12,7 +12,7 @@ For design:
 
 [DONE] - Charges pages styling
 [DONE] - Add 'Coming soon' text in video placeholder image
-- Resize the word 'Support' on support page logo
+[DONE] - Resize the word 'Support' on support page logo
 
 
 

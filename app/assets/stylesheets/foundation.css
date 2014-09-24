@@ -203,6 +203,11 @@
   width: auto;
 }
 
+.supportlogo{
+  height: 1.35em;
+  width: auto;
+}
+
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
