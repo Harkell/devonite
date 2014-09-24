@@ -16,10 +16,12 @@ class PanelController < ApplicationController
   end
 
   def statistics
-    @creationTime = "2014-08-20 20:21:02 +0100"
+    @creationTime = "2014-09-20 20:21:02 +0100"
     @blogCount = Blogpost.all.count
     @subscription = Subscription.first.subscribed
-  end
+    @viewscount = Impression.where(controller_name: "front").count
+    @viewstoday = Impression.where("created_at >= ?", Date.today).count
+  end 
 
   def blog
     @blog = Blogpost.new
@@ -33,5 +35,6 @@ class PanelController < ApplicationController
       redirect_to subscription_path
     end
   end
+
 
 end

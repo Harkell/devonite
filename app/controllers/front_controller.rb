@@ -1,4 +1,6 @@
 class FrontController < ApplicationController
+  impressionist actions: [:index], unique: [:session_hash]
+
   def index
   	@content = Content.find(1)
   end

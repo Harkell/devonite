@@ -16,6 +16,8 @@ Rails.application.routes.draw do
 
   get 'front/index'
 
+  get 'front/api' #test
+
   get 'front/howitworks'
 
   get 'front/blog'

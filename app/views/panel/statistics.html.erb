@@ -20,20 +20,20 @@
     <div class="row padding2v">
       <div class="large-3 columns content text-center">
         <div class="bcontainer padding1v">
-          <h1><%= time_ago_in_words(@creationTime) %></h1>
+          <h1><%= days_ago(@creationTime) %></h1>
           <p>days online</p>
         </div>
       </div>
       <div class="large-3 columns content text-center">
         <div class="bcontainer padding1v">
-          <h1>3,000</h1>
-          <p>page views</p>
+          <h1><%= @viewscount %></h1>
+          <p>total page views</p>
         </div>
       </div>
       <div class="large-3 columns content text-center">
         <div class="bcontainer padding1v">
-          <h1>2</h1>
-          <p>dickheads</p>
+          <h1><%= @viewstoday %></h1>
+          <p>views today</p>
         </div>
       </div>
       <div class="large-3 columns content text-center">
