@@ -10,6 +10,9 @@ gem 'mail_form' #For contact forms
 gem 'rails', '4.1.1'
 # Use pg as the database for Active Record for heroku compatibility
 
+
+gem 'impressionist'
+
 # sqlight for internal enviroments
 group :development do
     gem 'sqlite3'
