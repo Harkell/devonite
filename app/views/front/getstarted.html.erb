@@ -1,15 +1,20 @@
 <div class="grcontainer">
 	<div class="narrow">
-		<div class="large-12 columns text-left">
-			<h3 class="margin2v">Lets talk about your businesses future online</h3>
+		<div class="large-12 columns text-left content">
+			<h3 class="margin2v">Lets talk about your future online</h3>
+		</div>
+	</div>
+
+	<div class="narrow getstartedform">
+		<div class="large-12 columns content padding2t3b">
+			<%= form_for(@proposal) do |f| %>
+				<%= f.text_field :name, class: "getstartedform", :required => true, :placeholder => "Name" %>
+				<%= f.text_field :email, class: "getstartedform", :required => true, :placeholder => "Email" %>
+				<%= f.text_field :business, class: "getstartedform", :required => false, :placeholder => "Business Name" %>
+				<%= f.text_field :mobile, class: "getstartedform", :required => true, :numerical => true, :placeholder => "Mobile" %>
+				<%= f.submit "Submit" %>
+			<% end %>
 		</div>
 	</div>
 </div>
-<%= form_for(@proposal) do |f| %>
-	<%= f.text_field :email, :required => true, :placeholder => "Email" %>
-	<%= f.text_field :website, :required => false, :placeholder => "Website" %>
-	<%= f.text_field :phone, :required => true, :numerical => true, :placeholder => "Phone/Mobile number" %>
-	<%= f.text_area :message, :required => true, :placeholder => "Further information" %>
-	<%= f.submit "Send" %>
-<% end %>
 <%= render "layouts/footer" %>
