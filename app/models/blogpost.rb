@@ -6,4 +6,7 @@ class Blogpost < ActiveRecord::Base
 	validates :content, 
 		:presence => true
 
+	validates :image,
+		:presence => true
+
 end

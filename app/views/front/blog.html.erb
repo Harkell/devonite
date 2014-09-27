@@ -1,3 +1,10 @@
+<style>
+.blogimg{
+  background: url(<%= Blogpost.last.image %>);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
 <div class="blogimg">  
   <div class="frontheader navrow">
     <div class="large-2 columns left">
@@ -59,22 +66,22 @@
   <div class="narrow">
     <div class="large-12 columns text-left content">
       <div class="margin5t">
-        <h4 class="sanchez grey">2nd September</h4>
-        <h2><b>Social media and why you should use it<b></h2>
+        <h4 class="sanchez grey"><%= @latestPost.created_at.to_date.to_formatted_s(:short) %></h4>
+        <h2><b><%= @latestPost.title %><b></h2>
       </div>
     </div>
   </div>
 
   <div class="narrow">
     <div class="large-9 columns text-left content">
-      <p class="font09">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p class="font09"><%= truncate(@latestPost.content, :length => 200, :separator => ' ') %></p>
     </div>
   </div>
 
   <div class="narrow">
     <div class="large-2 columns text-center content">
       <div class="margin5b">
-        <p class="sanchez readmore">Read More</p>
+        <p class="sanchez readmore"><%= link_to 'Read More', blogpost_path(@latestPost) %></p>
       </div>
     </div>
   </div>

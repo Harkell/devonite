@@ -1,4 +1,11 @@
-<div class="blogimg">  
+<style>
+.showblogimg{
+  background: url(<%= @blogPost.image %>);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+</style>
+<div class="showblogimg">  
   <div class="navrow">
     <div class="large-2 columns left">
       <%= image_tag("footerlogo.png", class: "logo margin2v padding12h") %>
@@ -22,8 +29,8 @@
   <div class="narrow">
     <div class="large-12 columns text-left content text-center">
       <div class="margin8t11b">
-        <h4 class="sanchez grey">2nd September</h4>
-        <h1><b>Social media and why you should use it<b></h1>
+        <h4 class="sanchez grey"><%= @blogPost.created_at.to_date.to_formatted_s(:short) %></h4>
+        <h1><b><%= @blogPost.title %><b></h1>
       </div>
     </div>
   </div>
@@ -33,14 +40,6 @@
     <div class="large-12 columns text-left black">
       <div class="margin4v blogtext darkgrey">
         <p class="blogtext"><%= @blogPost.content %>
-          This may look absurd, and rightly so. The idea that people should be forced to sell their labor at the threat of being replaced by robots, and in response call for the right to better pay instead of the right to be replaced by said robots is kind of absurd, isn’t it? Because, what exactly are robots for anyway?
-          <br><br>
-Technological advancement is the boon of human progress, not its bane. Whereas once over 90% of human labor was dedicated to agriculture, in the U.S. it is now 1.1%. What if we had looked at the tractor in fear of it reducing the need for our labor? Where would we be now?<br><br>
-
-We must not be fooled however into thinking that just as agricultural labor moved to manufacturing, and manufacturing is moving to service industry labor, that service industry labor will be safe or move to something else again entirely. For this is no longer about tractors replacing human horsepower, but hardware and software replacing human brainpower.<br><br>
-
-Technological Unemployment
-The potential for humans to become this century’s horses is real, inferior in almost every way for the jobs once best suited for us. More and more jobs will become more cheaply, efficiently, and just plain better done by machines. We have already reached this point for certain jobs, and this trend will only accelerate because that is the nature of technology — exponential growth. As evidence of this, I give you CGP Grey’s recent 15-minute mini-documentary, “Humans Need Not Apply.”
         </p>
       </div>
     </div>

@@ -44,6 +44,6 @@ class BlogpostsController < ApplicationController
     @blogPost = Blogpost.find(params[:id])
   end
   def blog_params
-    params.require(:blogpost).permit(:title, :content)
+    params.require(:blogpost).permit(:title, :content, :image)
   end
 end

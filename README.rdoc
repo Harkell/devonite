@@ -2,8 +2,6 @@ To do list:
 
 For rails:
 - Stripe webhooks testing (including redirect after payment)
-- Dashboard stats implementation
-- Refining of blog
 - Implement paperclip (image attachment extension)
 - Add FAQ post integration
 - LINK UP EDIT CONTENT
