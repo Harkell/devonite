@@ -15,6 +15,13 @@ class FrontController < ApplicationController
     end
   end
 
+  def getstarted
+    @blogPosts = Blogpost.all.reverse
+    respond_to do |format|
+      format.html {render :layout => 'getstarted'}
+    end
+  end
+
   def support
     @contact = Contact.new
     respond_to do |format|

@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
   get 'front/howitworks'
 
+  get 'front/getstarted'
+
   get 'front/blog'
 
   get 'front/support'
