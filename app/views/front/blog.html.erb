@@ -1,6 +1,9 @@
+<% if @latestPost.blank? %>
+  <%= "No blog posts exist at this time." %>
+<% else %>
 <style>
 .blogimg{
-  background: url(<%= Blogpost.last.image %>);
+  background: url(<%= @blogPicture %>);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -63,6 +66,8 @@
     </div>
   </div>
 
+  <%= "No" %>
+
   <div class="narrow">
     <div class="large-12 columns text-left content">
       <div class="margin5t">
@@ -99,7 +104,7 @@
     </div>
   </div>
 <% end %>
-
+<% end %>
 </div>
 <%= render "layouts/footer" %>
 

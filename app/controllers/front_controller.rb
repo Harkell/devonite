@@ -11,6 +11,9 @@ class FrontController < ApplicationController
   def blog
     @blogPosts = Blogpost.all.reverse.drop(1)
     @latestPost = Blogpost.last
+    if @latestPost.blank? == false
+      @blogPicture = Blogpost.last.image
+    end
     respond_to do |format|
       format.html {render :layout => 'blog'}
     end
