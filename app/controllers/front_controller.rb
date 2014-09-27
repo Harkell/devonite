@@ -16,7 +16,7 @@ class FrontController < ApplicationController
   end
 
   def getstarted
-    @blogPosts = Blogpost.all.reverse
+    @proposal = Proposal.new
     respond_to do |format|
       format.html {render :layout => 'getstarted'}
     end

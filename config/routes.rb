@@ -34,6 +34,8 @@ Rails.application.routes.draw do
 
   resources "requests", only: [:new, :create]
 
+  resources "proposals", only: [:new, :create]
+
 
   scope '/hooks', :controller => :hooks do
   post :receiver

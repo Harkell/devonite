@@ -5,5 +5,11 @@
 		</div>
 	</div>
 </div>
-
+<%= form_for(@proposal) do |f| %>
+	<%= f.text_field :email, :required => true, :placeholder => "Email" %>
+	<%= f.text_field :website, :required => false, :placeholder => "Website" %>
+	<%= f.text_field :phone, :required => true, :numerical => true, :placeholder => "Phone/Mobile number" %>
+	<%= f.text_area :message, :required => true, :placeholder => "Further information" %>
+	<%= f.submit "Send" %>
+<% end %>
 <%= render "layouts/footer" %>
