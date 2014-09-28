@@ -24,12 +24,12 @@ class ContentController < ApplicationController
 	private
 
 	def set_content
-		@content = Content.find(1)
+		@content = Content.find(params[:id])
 	end
 
 	def content_params
 		params.require(:content).permit(:section1, :section2, :section3, :section4, :section5, :section6, 
-			:section7, :section8, :section9)
+			:section7, :section8, :section9, :section10, :section11, :section12, :section13, :section14, :section15)
 	end
 
 end

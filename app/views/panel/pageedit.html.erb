@@ -39,41 +39,97 @@
           <div class="tabcontent active" id="home">
             <div class="blue content">
               <%= form_for(@content) do |f| %>
-                <%= f.label "First Header" %>
+                <%= f.label "Title" %>
                 <%= f.text_field :section1 %>
-                <%= f.label "Second Header" %>
+                <%= f.label "Subtitle" %>
                 <%= f.text_field :section2 %>
-                <%= f.label "First Header, first section" %>
+                <%= f.label "Top Button" %>
                 <%= f.text_field :section3 %>
-                <%= f.label "First paragraph, first section" %>
-                <%= f.text_area :section4 %>
-                <%= f.label "First Header, second section" %>
-                <%= f.text_field :section5 %>
-                <%= f.label "First paragraph, second section" %>
-                <%= f.text_area :section6 %>
-                <%= f.label "Second paragraph, second section" %>
+                <%= f.label "First Header" %>
+                <%= f.text_field :section4 %>
+                <%= f.label "First paragraph" %>
+                <%= f.text_area :section5 %>
+                <%= f.label "Second Header" %>
+                <%= f.text_field :section6 %>
+                <%= f.label "Second paragraph" %>
                 <%= f.text_area :section7 %>
-                <%= f.label "First Header, third section" %>
+                <%= f.label "Third Header" %>
                 <%= f.text_field :section8 %>
-                <%= f.label "First paragraph, third section" %>
+                <%= f.label "Third paragraph" %>
                 <%= f.text_area :section9 %>
+                <%= f.label "Middle Button" %>
+                <%= f.text_field :section10 %>
+                <%= f.label "Fourth Header" %>
+                <%= f.text_field :section11 %>
+                <%= f.label "Fourth paragraph" %>
+                <%= f.text_area :section12 %>
+                <%= f.label "Fifth Header" %>
+                <%= f.text_field :section13 %>
+                <%= f.label "Fifth paragraph" %>
+                <%= f.text_area :section14 %>
+                <%= f.label "Bottom Button" %>
+                <%= f.text_field :section15 %>
                 <%= f.submit %>
               <% end %>
             </div>
           </div>
           <div class="tabcontent" id="howitworks">
             <div class="blue content margin2t">
-              <p>Instert second panel content here</p>
+              <%= form_for(@content2) do |f| %>
+                <%= f.label "Box one" %>
+                <%= f.text_area :section1 %>
+                <%= f.label "Box two" %>
+                <%= f.text_area :section2 %>
+                <%= f.label "Box three" %>
+                <%= f.text_area :section3 %>
+                <%= f.label "Box four" %>
+                <%= f.text_area :section4 %>
+                <%= f.label "Header one" %>
+                <%= f.text_field :section5 %>
+                <%= f.label "Paragraph one" %>
+                <%= f.text_area :section6 %>
+                <%= f.label "Header two" %>
+                <%= f.text_field :section7 %>
+                <%= f.label "Paragraph two" %>
+                <%= f.text_area :section8 %>
+                <%= f.label "Bottom Header" %>
+                <%= f.text_field :section9 %>
+                <%= f.label "Bottom paragraph one" %>
+                <%= f.text_area :section10 %>
+                <%= f.label "Bottom paragraph two" %>
+                <%= f.text_area :section11 %>
+                <%= f.label "Bottom paragraph three" %>
+                <%= f.text_area :section12 %>
+                <%= f.label "Bottom button" %>
+                <%= f.text_area :section13 %>
+                <%= f.submit %>
+              <% end %>
             </div>
           </div>
           <div class="tabcontent" id="blog">
             <div class="blue content margin2t">
-              <p>Instert third panel content here</p>
+              <p>Edit blog manually</p>
             </div>
           </div>
           <div class="tabcontent" id="panel2-4">
             <div class="blue content margin2t">
-              <p>Instert fourth panel content here</p>
+                <%= form_for(@content4) do |f| %>
+                <%= f.label "Average response time" %>
+                <%= f.text_field :section1 %>
+                <%= f.label "FAQ 1" %>
+                <%= f.text_area :section2 %>
+                <%= f.label "FAQ 2" %>
+                <%= f.text_area :section3 %>
+                <%= f.label "FAQ 3" %>
+                <%= f.text_area :section4 %>
+                <%= f.label "FAQ 4" %>
+                <%= f.text_area :section5 %>
+                <%= f.label "Contact mobile number" %>
+                <%= f.text_field :section6 %>
+                <%= f.label "Contact email" %>
+                <%= f.text_field :section7 %>
+                <%= f.submit %>
+              <% end %>
             </div>
           </div>
         </div>

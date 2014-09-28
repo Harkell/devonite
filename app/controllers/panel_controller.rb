@@ -5,8 +5,10 @@ class PanelController < ApplicationController
 
 
   def pageedit
-    @content = Content.find(1)
-    #@content2 = Content.find(2)  
+    @content = Content.find(1) # Front index
+    @content2 = Content.find(2) # Front howitworks
+    @content3 = Content.find(3) # Front Blog 
+    @content4 = Content.find(4) # Front support
   end
 
   def requestchange

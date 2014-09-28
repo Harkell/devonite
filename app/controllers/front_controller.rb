@@ -6,9 +6,11 @@ class FrontController < ApplicationController
   end
 
   def howitworks
+    @content2 = Content.find(2)
   end
 
   def blog
+    #@content3 = Content.find(3)
     @blogPosts = Blogpost.all.reverse.drop(1)
     @latestPost = Blogpost.last
     if @latestPost.blank? == false
@@ -27,6 +29,7 @@ class FrontController < ApplicationController
   end
 
   def support
+    @content4 = Content.find(4)
     @contact = Contact.new
     respond_to do |format|
       format.html {render :layout => 'support'}

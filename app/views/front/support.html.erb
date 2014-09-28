@@ -12,7 +12,7 @@
 	          <%= f.submit "Send" %>
 	        </div>
 	        <div class="large-9 columns text-center">
-  	        <p class="margin15t">(Our average response time is 60 minutes)</p>
+  	        <p class="margin15t">(Our average response time is <%== @content4.section1 %>)</p>
   	      </div>
         </div>
         <% end %>
@@ -27,17 +27,13 @@
 		<div class="narrow" data-equalizer>
 			<div class="large-8 columns content" data-equalizer-watch>
 				<h3 class="margin2b content faq lbcontainer">FAQ</h3>
-				<p class="font09 content faq lbcontainer"><b>QUESTION </b>Our average response time is 60 minutes<br>
-				   <b>ANSWER </b>Our average response time is 60 minutes</p>
-				<p class="font09 content faq lbcontainer"><b>QUESTION </b>Our average response time is 60 minutes<br>
-				   <b>ANSWER </b>Our average response time is 60 minutes</p>
-				<p class="font09 content faq lbcontainer"><b>QUESTION </b>Our average response time is 60 minutes<br>
-				   <b>ANSWER </b>Our average response time is 60 minutes</p>
-				<p class="font09 content faq lbcontainer"><b>QUESTION </b>Our average response time is 60 minutes<br>
-				   <b>ANSWER </b>Our average response time is 60 minutes</p>
+				<p class="font09 content faq lbcontainer"><%== @content4.section2 %></p>
+				<p class="font09 content faq lbcontainer"><%== @content4.section3 %></p>
+				<p class="font09 content faq lbcontainer"><%== @content4.section4 %></p>
+				<p class="font09 content faq lbcontainer"><%== @content4.section5 %></p>
 			</div>
 			<div class="large-4 columns content">
-				<div class="lbcontainer content faq lbcontainer" data-equalizer-watch><h3>Contact us directly</h3><p class="margin1t">MOBILE: 07906 574103<br>EMAIL: support@devonite.co.uk</p></div>
+				<div class="lbcontainer content faq lbcontainer" data-equalizer-watch><h3>Contact us directly</h3><p class="margin1t">MOBILE: <%== @content4.section6 %><br>EMAIL: <%== @content4.section7 %></p></div>
 			</div>
 		</div>
 	</div>

@@ -9,7 +9,7 @@
         </div>
         <div class="large-4 columns content">
           <a href="<%= front_howitworks_path %>" class="mobilevideobutton marin3v">
-          <%= image_tag("pb.png", class: "margin017b03r") %><span class="margin01t">WATCH THE VIDEO</span></a>
+          <%= image_tag("pb.png", class: "margin017b03r") %><span class="margin01t"><%== @content.section3 %></span></a>
         </div>
         <div class="large-4 columns">
         </div>
@@ -25,7 +25,7 @@
         <div class="large-12 columns text-center">
           <h1 class="intro blue"><%== @content.section1 %></h1>
           <h3 class="blue"><%== @content.section2 %></h3>
-            <a href="<%= front_howitworks_path %>" class="videobutton margin3v"><%= image_tag("pb.png", class: "margin017b03r") %><span class="margin01t">WATCH THE VIDEO</span></a>
+            <a href="<%= front_howitworks_path %>" class="videobutton margin3v"><%= image_tag("pb.png", class: "margin017b03r") %><span class="margin01t"><%== @content.section3 %></span></a>
         </div>
       </div>
     </div>
@@ -43,12 +43,12 @@
   <div class="padding4t3b">
     <div class="narrow">
       <div class="large-6 columns text-left content">
-          <h3>Here's the problem</h3>
-          <p class="thin">Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative, streamlined functionality you'd get from a leading website builder. Giving Devon businesses the best of both worlds.</p>
+          <h3><%== @content.section4 %></h3>
+          <p class="thin"><%== @content.section5 %></p>
       </div>
       <div class="large-6 columns content text-left">
-          <h3>This is why we're different</h3>
-          <p class="thin">Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative, streamlined functionality you'd get from a leading website builder. Giving Devon businesses the best of both worlds.</p>
+          <h3><%== @content.section6 %></h3>
+          <p class="thin"><%== @content.section7 %></p>
       </div>
     </div>
     <div class="narrow padding2v">
@@ -58,17 +58,17 @@
             <div class="row content valign-middle padding2v">
               <div class="row">
                 <div class="large-12 columns">
-                  <h4>Control, Configure, Create</h4>
+                  <h4><%== @content.section8 %></h4>
                 </div>
               </div>
               <div class="row">
                 <div class="large-12 columns">
-                  <h5 class="thin font09">Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative.</h5>
+                  <h5 class="thin font09"><%== @content.section9 %></h5>
                 </div>
               </div>
               <div class="row">
                 <div class="large-12 columns text-center">
-                  <a href="<%= front_howitworks_path %>" class=" margin1t wbutton"><span class="margin01t black">LEARN MORE</span></a>
+                  <a href="<%= front_howitworks_path %>" class=" margin1t wbutton"><span class="margin01t black"><%== @content.section10 %></span></a>
                 </div>
               </div>
             </div>
@@ -76,13 +76,13 @@
           <div class="desktoppreviewbox">
             <div class="row content valign-middle padding2v">
               <div class="large-4 columns content">
-                <h4>Control, Configure, Create</h4>
+                <h4><%== @content.section8 %></h4>
               </div>
               <div class="large-4 columns">
-                <h5 class="thin font09">Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative.</h5>
+                <h5 class="thin font09"><%== @content.section9 %></h5>
               </div>
               <div class="large-4 columns text-center content">
-                <a href="<%= front_howitworks_path %>" class="wbutton"><span class="margin01t black">LEARN MORE</span></a>
+                <a href="<%= front_howitworks_path %>" class="wbutton"><span class="margin01t black"><%== @content.section10 %></span></a>
               </div>
             </div>
           </div>
@@ -97,10 +97,10 @@
   <div class="padding4t4b">
     <div class="narrow" data-equalizer>
       <div class="large-7 columns content" data-equalizer-watch>
-        <h3>Let us maintain your online presence</h3>
-        <p class="thin font09">Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative, streamlined functionality you'd get from a leading website builder. Giving Devon businesses the best of both worlds.Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative.</p>
-        <h3 class="margin2t">Perfect for small business</h3>
-        <p class="thin margin0 font09">Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative, streamlined functionality you'd get from a leading website builder. Giving Devon businesses the best of both worlds.Devonite is a next generation website solution. We take the bespoke, beautiful designs you'd expect from a high-end design job and merge them with the innovative.</p>
+        <h3><%== @content.section11 %></h3>
+        <p class="thin font09"><%== @content.section12 %></p>
+        <h3 class="margin2t"><%== @content.section13 %></h3>
+        <p class="thin margin0 font09"><%== @content.section14 %></p>
       </div>
       <div class="large-1 columns">
       </div>
@@ -129,7 +129,7 @@
       </div>
       <div class="row">
         <div class="large-12 columns text-center content">
-          <a href="<%= front_getstarted_path%>" class="wbutton margin2t margin7b"><span class="margin01t black">LETS GET STARTED</span></a>
+          <a href="<%= front_getstarted_path%>" class="wbutton margin2t margin7b"><span class="margin01t black"><%== @content.section7 %></span></a>
         </div>
     </div>
   </div>
