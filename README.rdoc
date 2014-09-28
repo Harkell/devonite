@@ -4,7 +4,8 @@ For rails:
 - Stripe webhooks testing (including redirect after payment)
 - Implement paperclip (image attachment extension)
 - Add FAQ post integration
-- LINK UP EDIT CONTENT
+[DONE] - LINK UP EDIT CONTENT
+- GO THROUGH http://www.inboundio.com/blog/seo-for-ruby-on-rails-complete-guide/
 
 For design:
 
