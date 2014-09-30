@@ -17,26 +17,26 @@ class BlogpostsController < ApplicationController
 	@blogPost = Blogpost.create(blog_params)
 		respond_to do |format|
     	if @blogPost.save
-        	format.html { redirect_to front_blog_path, notice: 'Post was successfully created.' }
+        	format.html { redirect_to blog_path, notice: 'Post was successfully created.' }
         	format.json {  }
     	else
-        	format.html { redirect_to front_blog_path, notice: 'Post was not successfully created.'  }
+        	format.html { redirect_to blog_path, notice: 'Post was not successfully created.'  }
         	format.json {  }
     	end
     end
   end
   def update
     if @blogPost.update(blog_params)
-      redirect_to front_blog_path, notice: 'Post was successfully updated.'
+      redirect_to blog_path, notice: 'Post was successfully updated.'
     else
-      redirect_to front_blog_path, notice: 'Post was not successfully updated.'
+      redirect_to blog_path, notice: 'Post was not successfully updated.'
     end
   end
   def destroy
     if @blogPost.destroy
-      redirect_to front_blog_path, notice: 'Post was successfully deleted.'
+      redirect_to blog_path, notice: 'Post was successfully deleted.'
     else
-      redirect_to front_blog_path, notice: 'Post was not successfully deleted.'
+      redirect_to blog_path, notice: 'Post was not successfully deleted.'
     end
   end
   private

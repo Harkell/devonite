@@ -22,7 +22,7 @@ Rails.application.routes.draw do
 
   get '/getstarted' => 'front#getstarted'
 
-  get '/blog' => "front#blog"
+  get '/blog' => 'front#blog'
 
   get '/support' => 'front#support'
 
