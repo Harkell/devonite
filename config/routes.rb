@@ -14,17 +14,17 @@ Rails.application.routes.draw do
   devise_for :users
   root 'front#index'
 
-  get 'front/index'
+  get 'front/index' 
 
-  get 'front/api' #test
+  get 'front/api'
 
-  get 'front/howitworks'
+  get '/howitworks' => 'front#howitworks'
 
-  get 'front/getstarted'
+  get '/getstarted' => 'front#getstarted'
 
-  get 'front/blog'
+  get '/blog' => 'front#blog'
 
-  get 'front/support'
+  get '/support' => 'front#support'
 
   match '/subscription', to: 'charges#prompt', via: 'get'
 
