@@ -47,6 +47,8 @@ GEM
     erubis (2.7.0)
     execjs (2.2.1)
     ffi (1.9.3-x86-mingw32)
+    friendly_id (5.0.4)
+      activerecord (>= 4.0.0)
     hike (1.2.3)
     httpclient (2.4.0)
     i18n (0.6.11)
@@ -71,6 +73,8 @@ GEM
     minitest (5.4.0)
     multi_json (1.10.1)
     netrc (0.7.7)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     nokogiri (1.6.3.1-x86-mingw32)
       mini_portile (= 0.6.0)
     orm_adapter (0.5.0)
@@ -158,6 +162,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
+  friendly_id
   impressionist
   jbuilder (~> 2.0)
   jquery-rails

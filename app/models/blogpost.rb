@@ -1,4 +1,6 @@
 class Blogpost < ActiveRecord::Base
+	extend FriendlyId
+	friendly_id :title, use: :slugged
 	
 	validates :title, 
 		:presence => true
@@ -8,5 +10,4 @@ class Blogpost < ActiveRecord::Base
 
 	validates :image,
 		:presence => true
-
 end

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'friendly_id'
 gem 'devise'
 gem 'stripe'#, :git => 'https://github.com/stripe/stripe-ruby'
 
