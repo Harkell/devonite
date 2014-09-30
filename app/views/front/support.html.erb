@@ -5,7 +5,7 @@
       <div class="margin5v">
         <%= form_for(@contact) do |f| %>
         <%= f.text_field :email, class: "supportform", :required => true, :placeholder => "Email" %>
-        <%= f.text_area :message, :as => :text, :required => true, :placeholder => "Question" %>
+        <%= f.text_area :message, class: "supportform", :as => :text, :required => true, :placeholder => "Question" %>
         <div class="row">
         	<div class="large-3 columns">
 	          </br>
