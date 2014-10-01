@@ -9,7 +9,7 @@ class Contact < MailForm::Base # try ActionMailer::Base?
   def headers
     {
       :subject => "Devonite Contact Form", #%(#{inbox})
-      :to => "comely@hotmail.co.uk",
+      :to => "support@devonite.co.uk",
       :from => %("#{name}" <#{email}>)
     }
   end

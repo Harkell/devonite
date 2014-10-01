@@ -11,7 +11,7 @@ class Proposal < MailForm::Base # try ActionMailer::Base?
   def headers
     {
       :subject => "Devonite - Lets get started", #%(#{inbox})
-      :to => "comely@hotmail.co.uk",
+      :to => "support@devonite.co.uk",
       :from => %("#{name}" <#{email}>)
     }
   end

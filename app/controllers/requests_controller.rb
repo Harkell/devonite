@@ -9,7 +9,7 @@ class RequestsController < ApplicationController
     if @request.deliver
       redirect_to :back, notice: 'Thankyou for your message.  We will hit you up soon breh.'
     else
-      redirect_to front_support_path, notice: 'Could not send message at this time.'
+      redirect_to support_path, notice: 'Could not send message at this time.'
     end
   end
 end
