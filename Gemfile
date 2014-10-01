@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'sitemap'
 gem 'metamagic'
 gem 'friendly_id'
 gem 'devise'
