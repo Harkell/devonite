@@ -11,46 +11,29 @@
 </head>
 <body class="bcontainer">
 
-
-  <div class="frontheader navrow">
-    <div class="large-3 columns left">
-      <%= image_tag("supportlogo.png", class: "supportlogo margin2v padding12h", alt: "Devonite Website Design") %>
-    </div>
-    <div class="large-8 columns">
-      <ul class="inline-list nav white margin26t right">
-        <li><%= link_to(root_path) do %>HOME<% end %></li>
-        <li>     |     </li>
-        <li><%= link_to(howitworks_path) do %>HOW IT WORKS<% end %></li>
-        <li>     |     </li>
-        <li><%= link_to(blog_path) do %>BLOG<% end %></li>
-        <li>     |     </li>
-        <li><%= link_to(support_path) do %>SUPPORT<% end %>
+  
+  <div class="navrow margin15v">
+  <div class="large-12 columns">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#" class="harimo"><%= image_tag("supportlogo.png", class: "logo", alt: "Devonite Website Design") %></a></h1>
         </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
-    </div>
-    <div class="large-1 columns">
-      <a href="http://www.twitter.com/devoniteuk" target="_blank"><div class="loginbutton"><%= image_tag("twitterbird.png", class: "") %><span class="margin01t"></span></div></a>
-    </div>
-  </div> 
-
-  <div class="mobilefrontheader row content">
-    <div class="row">
-      <div class="small-12 columns text-center">
-        <%= image_tag("supportlogo.png", class: "supportlogo margin1t", alt: "Devonite Website Design") %>
-      </div>
-    </div>
-    <div class="row">
-      <div class="large-12 columns text-center content">
-        <ul class="no-bullet nav margin26t">
-          <%= link_to(root_path) do %><li class="mobilenavwhite">HOME</li><% end %><br>
-          <%= link_to(howitworks_path) do %><li class="mobilenavwhite">HOW IT WORKS</li><% end %><br>
-          <%= link_to(blog_path) do %><li class="mobilenavwhite">BLOG</li><% end %><br>
-          <%= link_to(support_path) do %><li class="mobilenavwhite">SUPPORT
-          </li><% end %>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><%= link_to(root_path) do %>HOME<% end %></li>
+          <li><%= link_to(howitworks_path) do %>HOW IT WORKS<% end %></li>
+          <li><%= link_to(blog_path) do %>BLOG<% end %></li>
+          <li><%= link_to(support_path) do %>SUPPORT<% end %></li>
+          <div class="loginbutton"><%= image_tag("twitterbird.png", alt: "twitter") %><span class="margin01t"></span></div>
         </ul>
-      </div>
-    </div>
-  </div> 
+      </section>
+    </nav>
+  </div>
+</div>
 
   <div class="narrow">
     <div class="large-12 columns content">
