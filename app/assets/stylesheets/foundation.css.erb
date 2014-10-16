@@ -394,6 +394,10 @@ input[type="submit"] {
   color: #1e4b67;
 }
 
+.white{
+  color: #fff;
+}
+
 .red{
   color: #bd0000;
 }
@@ -481,16 +485,22 @@ margin-bottom: 1.5em;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   line-height: normal;
+  position: relative;
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none;
   -webkit-border-radius: 0.5em;
   display: inline-block;
+  padding-top: 0.5rem;
+  padding-right: 0.7rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.7rem;
   font-size: 0.7rem;
   background-color: #749164;
   border-color: #2285a2;
   color: white;
   transition: background-color 300ms ease-out;
+  margin-top: 0.93em;
 }
 
 .loginbutton:hover{
@@ -500,16 +510,22 @@ margin-bottom: 1.5em;
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   line-height: normal;
+  position: relative;
   text-decoration: none;
   text-align: center;
   -webkit-appearance: none;
   -webkit-border-radius: 0.5em;
   display: inline-block;
+  padding-top: 0.5rem;
+  padding-right: 0.7rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.7rem;
   font-size: 0.7rem;
   background-color: #6b8b64;
   border-color: #2285a2;
   color: white;
   transition: background-color 300ms ease-out;
+  margin-top: 0.93em;
 }
 
 .logoutbutton{
@@ -4064,7 +4080,7 @@ li.tab-title {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #333333; }
+      background: none; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a::after {
@@ -4091,6 +4107,7 @@ li.tab-title {
   .top-bar-section ul li {
      }
     .top-bar-section ul li > a {
+      background: #6b8b64;
       display: block;
       width: 100%;
       color: #1e4b67;
@@ -4277,7 +4294,7 @@ li.tab-title {
       position: relative;
       top: 7px; }
     .top-bar.expanded {
-      background: #333333; }
+      background: none; }
 
   .contain-to-grid .top-bar {
     max-width: 62.5em;

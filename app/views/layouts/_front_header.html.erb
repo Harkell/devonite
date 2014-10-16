@@ -1,21 +1,24 @@
 <div class="navrow margin15v">
-  <nav class="top-bar" data-topbar role="navigation">
-    <ul class="title-area">
-      <li class="name">
-        <h1><a href="#" class="harimo"><%= image_tag("logo.png", class: "logo", alt: "Devonite Website Design") %></a></h1>
-      </li>
-       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-    </ul>
-    <section class="top-bar-section">
-      <ul class="right">
-        <li><%= link_to(root_path) do %>HOME<% end %></li>
-        <li><%= link_to(howitworks_path) do %>HOW IT WORKS<% end %></li>
-        <li><%= link_to(blog_path) do %>BLOG<% end %></li>
-        <li><%= link_to(support_path) do %>SUPPORT<% end %></li>
+  <div class="large-12 columns">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#" class="harimo"><%= image_tag("logo.png", class: "logo", alt: "Devonite Website Design") %></a></h1>
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
-    </section>
-  </nav>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><%= link_to(root_path) do %>HOME<% end %></li>
+          <li><%= link_to(howitworks_path) do %>HOW IT WORKS<% end %></li>
+          <li><%= link_to(blog_path) do %>BLOG<% end %></li>
+          <li><%= link_to(support_path) do %>SUPPORT<% end %></li>
+          <div class="loginbutton"><%= image_tag("twitterbird.png", alt: "twitter") %><span class="margin01t"></span></div>
+        </ul>
+      </section>
+    </nav>
+  </div>
 </div>
 
 
