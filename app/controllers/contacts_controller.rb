@@ -7,7 +7,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      redirect_to :back, notice: 'Thankyou for your message.  We will hit you up soon breh.'
+      redirect_to :back, notice: 'Success! Expect a response within the hour.'
     else
       redirect_to support_path, notice: 'Could not send message at this time.'
     end

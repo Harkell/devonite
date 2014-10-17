@@ -8,7 +8,7 @@ class Request < MailForm::Base # try ActionMailer::Base?
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "Devonite Request Form", #%(#{inbox})
+      :subject => "Devonite - Request Change", #%(#{inbox})
       :to => "enquiries@devonite.co.uk",
       :from => %("#{name}" <#{email}>)
     }

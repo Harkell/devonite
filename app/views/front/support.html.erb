@@ -5,6 +5,25 @@ meta title: "Devonite | Support",
 %>
 
 <div class="lbcontainer">
+
+  <div class="narrow">
+    <div class="large-12 columns content">
+      <% if flash[:notice] %>
+        <div data-alert class="alert-box success radius content">
+          <%= notice %>
+          <a href="" class="close">&times;</a>
+        </div>
+      <% end %>
+      <% if flash[:alert] %>
+        <div data-alert class="alert-box alert radius content">
+            <%= alert %>
+          <a href="" class="close">&times;</a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+
 <div class="lbcontainer underwater">
 	<div class="narrow">
 		<div class="large-6 columns content">
