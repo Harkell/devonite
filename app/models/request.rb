@@ -9,7 +9,7 @@ class Request < MailForm::Base # try ActionMailer::Base?
   def headers
     {
       :subject => "Devonite Request Form", #%(#{inbox})
-      :to => "comely@hotmail.co.uk",
+      :to => "enquiries@devonite.co.uk",
       :from => %("#{name}" <#{email}>)
     }
   end
