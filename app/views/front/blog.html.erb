@@ -67,7 +67,7 @@ meta title: "Devonite | Blog",
 
   <div class="narrow">
     <div class="large-9 columns text-left content">
-      <p class="font09"><%= truncate(@latestPost.content, :length => 200, :separator => ' ') %></p>
+      <p class="font09"><%= truncate(@latestPost.content.gsub(/<[^<>]*>/, " "), :length => 200, :separator => ' ') %></p>
     </div>
   </div>
 

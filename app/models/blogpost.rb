@@ -10,4 +10,5 @@ class Blogpost < ActiveRecord::Base
 
 	validates :image,
 		:presence => true
+
 end
