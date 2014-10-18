@@ -13,7 +13,7 @@ meta title: "Devonite | Blog",
 </style>
 <div class="showblogimg">
 
-<div class="navrow margin15v">
+<div class="navrow padding15v">
   <div class="large-12 columns">
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
@@ -58,7 +58,7 @@ meta title: "Devonite | Blog",
     <div class="large-12 columns text-left content text-center">
       <div class="margin8t11b">
         <h4 class="sanchez grey"><%= @blogPost.created_at.to_date.to_formatted_s(:short) %></h4>
-        <h1><b><%= @blogPost.title %><b></h1>
+        <h1><b><%== @blogPost.title %><b></h1>
       </div>
     </div>
   </div>

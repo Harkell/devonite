@@ -13,6 +13,7 @@ class FrontController < ApplicationController
     #@content3 = Content.find(3)
     @blogPosts = Blogpost.all.reverse.drop(1)
     @latestPost = Blogpost.last
+
     if @latestPost.blank? == false
       @blogPicture = Blogpost.last.image
     end
